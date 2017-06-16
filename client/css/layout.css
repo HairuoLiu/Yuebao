@@ -1,10 +1,13 @@
 /* The main content */
-.main-content {
-  padding-top: 120px;
-  min-height: 600px; 
-  background-color: #FFF7D2;
+.main-content{
+    /*old*/
+    
+    padding-top: 60px;
+    min-height: 600px;
+    
 }
-/*backgroundColor*/
+
+/* YB背景色 */
 .YByellow{
     background-color: #FFF7D2;
 }
@@ -32,18 +35,18 @@
 }
 
 .YByellowdivider{
-    height: 2px;
+    height: 1px;
     overflow: hidden;
     background-color: #FFF7D2;
 }
 .YBpurpledivider{
-    height: 2px;
+    height: 1px;
     overflow: hidden;
     background-color: #bd89d6;
 }
 
 .YBgreendivider{
-    height: 2px;
+    height: 1px;
     overflow: hidden;
     background-color: #9FCA64;
 }

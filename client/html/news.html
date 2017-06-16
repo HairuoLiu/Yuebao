@@ -1,25 +1,141 @@
-<template name="news">  
+<template name="news">
+  
+  <div class="news-background">
+    <div class="container">
+      <br>
+      <h4 class="center YBpurplefont">园所趣闻</h4>
+      <div class="YBpurpledivider"></div>
+      <br>
 
-  <div class="carousel carousel-slider center" data-indicators="true">
-    <div class="carousel-fixed-item center">
-      <a class="btn waves-effect white grey-text darken-text-2">button</a>
-    </div>
-    <div class="carousel-item red white-text" href="#one!">
-      <h2>First Panel</h2>
-      <p class="white-text">This is your first panel</p>
-    </div>
-    <div class="carousel-item amber white-text" href="#two!">
-      <h2>Second Panel</h2>
-      <p class="white-text">This is your second panel</p>
-    </div>
-    <div class="carousel-item green white-text" href="#three!">
-      <h2>Third Panel</h2>
-      <p class="white-text">This is your third panel</p>
-    </div>
-    <div class="carousel-item blue white-text" href="#four!">
-      <h2>Fourth Panel</h2>
-      <p class="white-text">This is your fourth panel</p>
+
+      <div class="card">
+        <div class="slider ">
+          <ul class="slides ">
+            <li>
+              <img src="slide0.png">
+              <!-- random image -->
+              <div class="caption center-align">
+                <h3>悦宝园美式幼儿园</h3>
+                <h5 class="light grey-text text-lighten-3">设计方案一</h5>
+              </div>
+            </li>
+            <li>
+              <img src="slide1.png">
+              <!-- random image -->
+              <div class="caption left-align">
+                <h3>悦宝园美式幼儿园</h3>
+                <h5 class="light grey-text text-lighten-3">设计方案二</h5>
+              </div>
+            </li>
+            <li>
+              <img src="slide3.png">
+              <!-- random image -->
+              <div class="caption right-align">
+                <h3>悦宝园美式幼儿园</h3>
+                <h5 class="light grey-text text-lighten-3">设计方案三</h5>
+              </div>
+            </li>
+            <li>
+              <img src="slide2.png">
+              <!-- random image -->
+              <div class="caption center-align">
+                <h3>悦宝园美式幼儿园</h3>
+                <h5 class="light grey-text text-lighten-3">设计方案四</h5>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <br>
+      </div>
+
+      <br>
+      <!-- post style 1-->
+      <div class="row">
+        <h4 class="center YBpurplefont">行业动态</h4>
+        <div class="YBpurpledivider"></div>
+        <br>
+        <div class="col s6">
+          <div class="collection ">
+            <a href="#!" class="collection-item"><span class="badge">1</span>新闻</a>
+            <a href="#!" class="collection-item"><span class="new badge">4</span>新闻</a>
+            <a href="#!" class="collection-item">新闻</a>
+            <a href="#!" class="collection-item"><span class="badge">14</span>新闻</a>
+          </div>
+        </div>
+
+        <div class="col s6">
+          <div class="collection ">
+            <a href="#!" class="collection-item">
+          <span class="badge">1</span>
+          新闻
+        </a>
+            <a href="#!" class="collection-item"><span class="new badge">4</span>新闻</a>
+            <a href="#!" class="collection-item">新闻</a>
+            <a href="#!" class="collection-item"><span class="badge">14</span>新闻</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!--news post-->
+      <div class="row">
+        <div class=" col s6">
+          <ul class="collapsible" data-collapsible="accordion">
+            <li>
+              <div class="collapsible-header YBgreenfont">
+                <span class="new badge">4</span>
+                <i class="material-icons">filter_drama</i> 新闻一
+              </div>
+              <div class="collapsible-body">
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header YBgreenfont">
+                <span class="badge">1</span>
+                <i class="material-icons">place</i> 新闻二
+              </div>
+              <div class="collapsible-body">
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col s6">
+          <ul class="collapsible" data-collapsible="accordion">
+            <li>
+              <div class="collapsible-header"><i class="material-icons">filter_drama</i>新闻一</div>
+              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">place</i>新闻二</div>
+              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">whatshot</i>新闻三</div>
+              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div>
+        <ul class="pagination ">
+          <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+          <li class="active"><a href="#!">1</a></li>
+          <li class="waves-effect"><a href="#!">2</a></li>
+          <li class="waves-effect"><a href="#!">3</a></li>
+          <li class="waves-effect"><a href="#!">4</a></li>
+          <li class="waves-effect"><a href="#!">5</a></li>
+          <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+        </ul>
+      </div>
+
+      <br>
+      <div class="YBpurpledivider"></div>
+      <!--<ul class="collapsible" data-collapsible="accordion">-->
     </div>
   </div>
-        
 </template>

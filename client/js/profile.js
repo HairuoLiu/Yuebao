@@ -56,7 +56,7 @@ Template.profile.helpers({
 Template.profile.events({
 	"click #delete-joke": function() {
 		Meteor.call("removeJoke", this._id);
-		Bert.alert("Your Joke Was Deleted", "success", "growl-top-right");
+		Bert.alert("已删除你的新闻", "success", "growl-top-right");
 	},
 
 	"submit .edit-profile": function(event) {

@@ -1,17 +1,44 @@
 <template name="login">
-	<div class="container">
-	{{#if currentUser}}
-	<h3 class="black">您已经登录<a href="/jokes">主页</a></h3>
-	{{else}}
-	<form class="form-signin">
-		<h2 class="form-signin-heading">账户登录</h2>
-		<label for="email" class="sr-only">邮箱地址</label>
-		<input type="email" name="email" id="email" class="form-control" placeholder="邮箱地址">
-		<label for="password" class="sr-only">密码</label>
-		<input type="password" name="password" id="password" class="form-control" placeholder="密码">
-		<button type="submit" id="login-btn" class="btn btn-lg btn-primary btn-block">登录</button>
-		<p>没有账户? <a href="/signup">注册账户</a></p>
-	</form>
-	{{/if}}
+
+	<div class="section login-background fullscreen">
+
+		<div class="container">
+			<br>
+			<div class="row">
+				<div class="col s12 m1 l1">
+					
+				</div>
+				<div class="col s12 m10 l4">
+					<div class="login-form card">
+					<br> 
+					{{#if currentUser}}
+						<h3 class="black-text center">您已经登录<a href="appointmentList">主页</a></h3>
+					{{else}}
+					<form class="form-signin">
+						<img class="form-logo" src="YB幼儿园.png" alt="">
+						<h3 class="form-signin-heading center">账号登录</h3>
+						<br> 
+						<label for="email" class="sr-only">邮箱地址</label>
+						<input type="email" name="email" id="email" class="form-control center" placeholder=" 邮箱地址 ">
+						<label for="password" class="sr-only">登陆密码</label>
+						<input type="password" name="password" id="password" class="form-control center" placeholder="登陆密码">
+						<button type="submit" id="login-btn" class="YBlogin-btn center waves-effect waves-light white-text">登录</button>
+						<p class="center">没有账号?
+							<a  href="/signup">注册账号</a>
+						</p>
+						<br>
+					</form>
+					{{/if}}
+
+					</div>
+				</div>
+				<div class="col s12 m1 l7">
+					
+				</div>
+
+			</div>
+		</div>
+
 	</div>
+
 </template>

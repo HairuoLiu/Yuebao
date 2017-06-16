@@ -1,58 +1,252 @@
 <template name="navbar">
-    {{#if currentUser}}
-    {{else}}
-    <div class="navbar-fixed">
-        <!-- header -->
-        <nav class="navbar-fixed YByellow main-navigation " role="navigation">
+    {{#if currentUser}} {{else}}
 
+    <!-- newheader -->
+    <div class="navbar-upper">
+        <nav class="z-depth-0">
+            <div class="nav-wrapper">
+                <div class="row">
+                    <div class="col s12">
+                        <a href="#modal1" class="brand-logo" style="display:block;float:left;">Materialize framework</a>
+                        <ul id="nav-mobile" class="right hide-on-med-and-down">
+
+                            <li>
+
+                                <form style="height:64px;">
+                                    <div class="input-field ">
+                                        <input id="search" type="search" required placeholder="Search">
+                                        <label class="label-icon" for="search"><i class="this material-icons">search</i></label>
+                                        <!--                   <i class="material-icons" style="">close</i> -->
+                                    </div>
+                                </form>
+
+                            </li>
+                            <!-- <li><a href="#modal1"><i class="material-icons">search</i></a></li> -->
+                            <!-- <li><a href="#modal1"><i class="material-icons">view_module</i></a></li> -->
+                            <!-- <li><a href="#modal1"><i class="material-icons">refresh</i></a></li> -->
+                            <li><a class="waves-effect waves-light btn btn-large animated tada" href="#modal1"><i class="material-icons left">phone</i>Call now!</a></li>
+                            <li><a href="#sheet1"><i class="material-icons">more_vert</i></a></li>
+
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    
+    <div class="navbar-lower">
+    <nav class="z-depth-0 nav-extended">
+        <div class="nav-wrapper">
+            <div class="row">
+                <div class="col s12">
+                    <a href="#" data-activates="mobile-demo" class="button-collapse show-on-large"><i class="material-icons">menu</i></a>
+                    <a class="fadeInLogo brand-logo animated slideInUp">
+                        <!-- M -->
+                        <!-- <img src="https://materializecss.com/res/materialize.svg" alt="" style="margin-top:12px;" height="40px"/> -->
+                        <i class="large material-icons">important_devices</i>
+                    </a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="#modal1">Home</a></li>
+                        <li class="active"><a href="#modal1">About</a></li>
+                        <li><a href="#modal1">Team</a></li>
+                        <li><a href="#modal1">Blog</a></li>
+                        <li><a href="#modal1">Resources</a></li>
+                        <li><a href="#modal1">Careers</a></li>
+                        <li><a href="#!" class="dropdown-button" data-activates="dropdown1">Contact<i class="material-icons right">arrow_drop_down</i></a></li>
+                    </ul>
+                </div>
+                <!-- temp -->
+<!--
+                <div class="nav-content ">
+                    <div class="col s12 nav-content red lighten-3">
+                        <ul class="tabs tabs-transparent ">
+                            <li class="tab"><a href="#tab1" class="active">Navbar tab</a></li>
+                            <li class="tab"><a href="#tab2">Another</a></li>
+                            <li class="tab"><a href="#tab3">Third one</a></li>
+                            <li class="tab"><a href="#tab4">Fourth tab</a></li>
+                        </ul>
+                        <ul class="side-nav grey darken-2" id="mobile-demo">
+
+
+                            <li class="sidenav-header red lighten-2">
+                                <div class="row">
+                                    <div class="col s4">
+                                        <img src="https://gravatar.com/avatar/961997eb7fd5c22b3e12fb3c8ca14e11?s=80&d=https://codepen.io/assets/avatars/user-avatar-80x80-bdcd44a3bfb9a5fd01eb8b86f9e033fa1a9897c3a15b33adfc2649a002dab1b6.png"
+                                            width="48px" height="48px" alt="" class="circle responsive-img valign profile-image">
+                                    </div>
+                                    <div class="col s8">
+                                        <a class="btn-flat dropdown-button waves-effect waves-light white-text" href="#" data-activates="profile-dropdown">Jay<i class="mdi-navigation-arrow-drop-down right"></i></a>
+                                        <ul id="profile-dropdown" class="dropdown-content">
+                                            <li><a href="#"><i class="material-icons">person</i>Profile</a></li>
+                                            <li><a href="#"><i class="material-icons">settings</i>Setting</a></li>
+                                            <li><a href="#"><i class="material-icons">help</i>Help</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#"><i class="material-icons">lock</i>Lock</a></li>
+                                            <li><a href="#"><i class="material-icons">exit_to_app</i>Logout</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="red lighten-2">
+                                <ul class="collapsible collapsible-accordion">
+                                    <li>
+                                        <a class="collapsible-header white-text waves-effect waves-blue "><i class="material-icons white-text ">language</i>Language <i class="material-icons right white-text" style="margin-right:0;">arrow_drop_down</i></a>
+                                        <div class="collapsible-body z-depth-3">
+                                            <ul>
+                                                <li><a class="waves-effect waves-blue" href="#">English</a></li>
+                                                <li><a class="waves-effect waves-blue" href="#">العربية</a></li>
+                                                <li><a class="waves-effect waves-blue" href="#">中文</a></li>
+                                                <li><a class="waves-effect waves-blue" href="#">Čeština</a></li>
+                                                <li><a class="waves-effect waves-blue" href="#">Nederlands</a></li>
+                                                <li><a class="waves-effect waves-blue" href="#">Français</a></li>
+                                                <li><a class="waves-effect waves-blue" href="#">Deutsch</a></li>
+                                                <li><a class="waves-effect waves-blue" href="#">한국어</a></li>
+                                                <li><a class="waves-effect waves-blue" href="#">Português</a></li>
+                                                <li><a class="waves-effect waves-blue" href="#">Русский</a></li>
+                                                <li><a class="waves-effect waves-blue" href="#">Español</a></li>
+                                                <li><a class="waves-effect waves-blue" href="#">Svenska</a></li>
+                                                <li><a class="waves-effect waves-blue" href="#">ภาษาไทย</a></li>
+                                                <li><a class="waves-effect waves-blue" href="#">Türkçe</a></li>
+                                                <li>
+                                                    <div class="divider"></div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="white">
+                                <ul class="collapsible collapsible-accordion">
+                                    <li>
+                                        <a class="collapsible-header waves-effect waves-blue"><i class="material-icons">folder_special</i>Layouts <i class="material-icons right" style="margin-right:0;">arrow_drop_down</i></a>
+                                        <div class="collapsible-body">
+                                            <ul>
+                                                <li><a class="waves-effect waves-blue" href="#"><i class="material-icons">fullscreen</i>Full Screen<span class="new badge right yellow grey lighten-1" data-badge-caption="updated"></span></a></li>
+                                                <li><a class="waves-effect waves-blue" href="#"><i class="material-icons">swap_horiz</i>Horizontal Menu<span class="new badge right yellow darken-3"></span></a></li>
+                                                <li>
+                                                    <div class="divider"></div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="white">
+                                <ul class="collapsible collapsible-accordion">
+                                    <li>
+                                        <a class="collapsible-header waves-effect waves-blue"><i class="material-icons">folder_open</i>A submenu <i class="material-icons right" style="margin-right:0;">arrow_drop_down</i></a>
+                                        <div class="collapsible-body">
+                                            <ul>
+                                                <li><a class="waves-effect waves-blue" href="#"><i class="material-icons">fullscreen</i>Full Screen</a></li>
+                                                <li><a class="waves-effect waves-blue" href="#"><i class="material-icons">swap_horiz</i>Horizontal Menu</a></li>
+                                                <li>
+                                                    <div class="divider"></div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="white"><a href="#" class="waves-effect waves-blue"><i class="material-icons">mail</i>Menu item</a></li>
+                            <li class="white"><a href="#" class="waves-effect waves-blue"><i class="material-icons">call</i> Menu item</a></li>
+                            <li class="white"><a href="#" class="waves-effect waves-blue"><i class="material-icons">android</i> Menu item</a></li>
+                            <li class="white"><a href="#" class="waves-effect waves-blue"><i class="material-icons">dialpad</i> Menu item</a></li>
+                            <li class="white">
+                                <div class="divider"></div>
+                            </li>
+                            <li class="white"><a href="#" class="waves-effect waves-blue"><i class="material-icons">language</i> Menu item<span class="new badge right yellow darken-3"></span></a></li>
+
+                            <li class="sidenav-footer grey darken-2">
+                                <div class="row">
+                                    <div class="social-icons">
+                                        <div class="col s2">
+                                            <a href="#"><i class="fa fa-lg fa-linkedin-square"></i></a>
+                                        </div>
+                                        <div class="col s2">
+                                            <a href="#"><i class="fa fa-lg fa-facebook-official"></i></a>
+                                        </div>
+                                        <div class="col s2">
+                                            <a href="#"><i class="fa fa-lg fa-twitter"></i></a>
+                                        </div>
+                                        <div class="col s2">
+                                            <a href="#"><i class="fa fa-lg fa-google-plus"></i></a>
+                                        </div>
+                                        <div class="col s2">
+                                            <a href="#"><i class="fa fa-lg fa-pinterest"></i></a>
+                                        </div>
+                                        <div class="col s2">
+                                            <a href="#"><i class="fa fa-lg fa-youtube"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+-->
+            </div>
+
+
+            <!-- Dropdown Structure -->
+            <ul id="dropdown1" class="dropdown-content">
+                <li><a href="#!">A really long item here</a></li>
+                <li><a href="#!">two</a></li>
+                <!-- <li class="divider"></li> -->
+                <li><a href="#!">grade three</a></li>
+            </ul>
+
+
+            <a class="btn-floating btn-large halfway-fab waves-effect waves-light teal hide-on-med-and-down scale-transition scale-out pulse"
+                href="#modal1">
+          <i class="material-icons">call</i>
+      </a>
+
+        </div>
+    </nav>
+</div>
+
+
+    <!-- oldheader -->
+    <!--<div class="navbar-fixed">   
+        <nav class="navbar-fixed YByellow main-navigation " role="navigation">
             <div class="nav-wrapper container ">
-                <a id="logo-container" href="#" class="brand-logo  white-text">
+                <a id="logo-container" href="#" class="brand-logo white-text">
                     <img src="/YB幼儿园.png" class="logo" alt="">
                 </a>
                 <ul class="right hide-on-med-and-down main-navigation">
-                    <li><a class="black-text text-darken-2" href="tel://4000789080">报名热线: 400-078-9080</a></li>
-                    <li><a class="black-text text-darken-2" href="login">登陆</a></li>
-                    <li><a class="black-text text-darken-2" href="http://www.rompy.cn/">悦宝园官网</a></li>
+                    <li><a class="black-text text-darken-2" href="tel://4000789080"><i class="fa fa-phone"></i> 报名热线: 400-078-9080</a></li>
+                    <li><a class="black-text text-darken-2" href="login" id="login-link"><i class="fa fa-sign-in"></i> 登录</a></li>
+                    <li><a class="black-text text-darken-2" href="http://www.rompy.cn/"><i class="fa fa-home"></i> 悦宝园官网</a></li>
                 </ul>
                 <ul id="nav-mobile" class="side-nav grey darken-4 white-text">
                     <li><a class="black-text text-darken-2" href="tel://4000789080">报名热线: 400-078-9080</a></li>
-                    <li><a class="black-text text-darken-2" href="login">
-                    登陆</a>
-                    </li>
-                    {{#if currentUser}}
-                    <li><a class="link-purple logout" href="#" id="logout-link">
-                        <i class="fa fa-sign-out"></i>登出</a></li>
-			        {{else}}
-			         <li><a class="" href="login" id="login-link"><i class="fa fa-sign-in"></i>登录</a>
-                    </li>
-                    {{/if}}
+                    <li><a class="black-text text-darken-2" href="login">登陆</a></li>
                     <li><a class="black-text text-darken-2" href="http://www.rompy.cn/">悦宝园官网</a></li>
                 </ul>
                 <a href="#" data-activates="nav-mobile" class="button-collapse text-darken-4 grey-text">
                     <i class="material-icons white-text">menu</i>
                 </a>
             </div>
-
-            <!-- navbar -->
             <div class="nav-wrapper YBpurple">
-
                 <div class="nav-wrapper container ">
-                    <!--<a id="logo-container" href="#" class="brand-logo white-text">美式幼儿教育专家</a>-->
                     <ul class="left hide-on-med-and-down main-navigation">
-                        <li><a href="/">关于我们</a></li>
+                        <li><a href="/">主页</a></li>
+                        <li><a href="/aboutus">关于我们</a></li>
                         <li><a href="class">课程介绍</a></li>
                         <li><a href="teacher">专家师资</a></li>
                         <li><a href="news">新闻中心</a></li>
                         <li><a href="joinus">事业加盟</a></li>
                         <li><a href="contactus">联系我们</a></li>
-                        <div class="right">
-                            <a href="appointment" id="download-button" class="btn waves-effect waves-light YBgreen">点击预约</a>
-                        </div>
+                        <li><a href="appointment" class="btn light-green waves-effect waves-light">在线预约</a>
+                        </li>
                     </ul>
                     <ul id="nav-mobile" class="side-nav grey darken-4 white-text">
-
+                        <li><a href="/">主页</a></li>
                         <li><a href="appointment">点击预约</a></li>
-                        <li><a href="/">关于我们</a></li>
+                        <li><a href="aboutus">关于我们</a></li>
                         <li><a href="class">课程介绍</a></li>
                         <li><a href="teacher">专家师资</a></li>
                         <li><a href="news">新闻中心</a></li>
@@ -60,11 +254,12 @@
                         <li><a href="contactus">联系我们</a></li>
                     </ul>
                     <a href="#" data-activates="nav-mobile" class="button-collapse text-darken-4 grey-text">
-                    <i class="material-icons white-text">menu</i>
-                </a>
+                        <i class="material-icons white-text">menu</i>
+                    </a>
                 </div>
             </div>
         </nav>
-    </div>
-{{/if}}
+    </div>-->
+    {{/if}}
+
 </template>

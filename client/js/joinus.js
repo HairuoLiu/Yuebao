@@ -1,5 +1,5 @@
  Template.joinus.rendered = function () {
-     $(document).ready(function () {
-         $('.parallax').parallax();
-     });
+    $(document).ready(function(){
+      $('.parallax').parallax();
+    });
  }

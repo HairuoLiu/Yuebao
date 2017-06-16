@@ -30,7 +30,7 @@ Template.signup.events({
 					Bert.alert(err.reason, "danger", "growl-top-right");
 				} else {
 					Bert.alert("账户创建成功! 您已登录", "success", "growl-top-right");
-					Router.go("/jokes");
+					Router.go("/appointmentList");
 				}
 			});
 		}

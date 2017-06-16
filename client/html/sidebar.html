@@ -1,29 +1,74 @@
 <template name="sidebar">
 	{{#if loggingIn}}
-	
-	<h1>登录中...</h1>
+	<div class="progress">
+		<div class="indeterminate"></div>
+	</div>
+	<div class="preloader" data-preloader="asymetric">
+		<span>Loading...</span>
+	</div>
+	{{else}} {{#if currentUser}}
+	<!--<aside class="sidebar-left YBpurple">-->
+	<!--</aside>-->
 
-	{{else}} 
-	{{#if currentUser}}
-	<aside class="sidebar-left YBpurple">
-		<img src="YB幼儿园.png" class="icon">
-		<a class="YB-logo white-text" href="#">管理员</a>
-		<div class="sidebar-links">
-			{{#if currentUser}}
-			<a class="link-red" href="/profile" id="profile-link"><i class="fa fa-user"></i>用户信息</a> 
-			{{else}} 
-			{{/if}}
-			<a class="link-blue" href="/jokes" id="jokes-link"><i class="fa fa-comments-o"></i>查看预约</a>
-			<a class="link-yellow" href="/rankings" id="rankings-link"><i class="fa fa-trophy"></i>Rankings</a>
-			<a class="link-green" href="/search" id="search-link"><i class="fa fa-search"></i>Search</a> 
-			{{#if currentUser}}
-			<a class="link-purple logout" href="#" id="logout-link"><i class="fa fa-sign-out"></i>登出</a> 
-			{{else}}
-			<a class="" href="/login" id="login-link"><i class="fa fa-sign-in"></i>登录</a> 
-			{{/if}}
-		</div>
-	</aside>
+	<!-- new -->
+	<ul id="slide-out" class="side-nav fixed">
+		<li>
+			<!--<li class="userView YBpurple">
+			<div class="icon">
+				<img src="YB幼儿园.png" class="icon">
+			</div>
+			<div class="row">
+				{{#with UserImages}}
+				<img src="{{image}}" class="responsive-img" alt=""> {{else}}
+				<img src="github.svg" class="responsive-img" alt=""> {{/with}}
+				<p class="white-text">{{username}}</p>
+				<a href="#!email">
+					<span class="white-text">{{email}}</span>
+				</a>	
+			</div>
+			</li>-->
 
-	{{else}} {{/if}} 
+			<div class="userView YBpurple">
+				<div class="icon ">
+					<img src="YB幼儿园.png" class="icon">
+				</div>
+				<a href="profile">
+				{{#with UserImages}}
+					<img src="{{image}}" class="circle responsive-img valign profile-image">
+				{{else}}
+					<img src="github.svg" class="circle responsive-img valign profile-image">
+				{{/with}}
+				</a>
+				<a href="profile">
+					<span class="white-text name">
+						{{username}}
+					</span>
+				</a>
+				<a href="#!email">
+					<span class="white-text email">
+						{{email}}
+					</span></a>
+			</div>
+		</li>
+
+		<li><a class="subheader">管理员</a></li>
+		<li>
+			<div class="divider"></div>
+		</li>
+		<li><a href="appointmentList"><i class="material-icons">face</i>查看所有预约</a></li>
+
+		<li><a href="postNews"><i class="material-icons">satellite</i>新闻发布更改</a></li>
+		<!--<li><a href="postNews"><i class="material-icons">satellite</i>搜索</a></li>-->
+		<li>
+			<div class="divider"></div>
+		</li>
+		<li>
+			<a class="link-purple logout waves-effect" href="#">
+				<i class="material-icons">cancel</i>登出
+			</a>
+		</li>
+	</ul>
+	<a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="material-icons">menu</i></a> {{else}}
+	{{/if}} 
 	{{/if}}
 </template>

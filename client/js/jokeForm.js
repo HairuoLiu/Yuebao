@@ -15,11 +15,11 @@ Template.jokeForm.events({
 			event.target.jokeName.value = "";
 			event.target.jokePost.value = "";
 
-			Bert.alert("Your Joke Was Posted!", "success", "growl-top-right");
+			Bert.alert("成功发布!", "success", "growl-top-right");
 
 		} else {
 			
-			Bert.alert("something went wrong", "danger", "growl-top-right");
+			Bert.alert("出错了，发布失败", "danger", "growl-top-right");
 		}
 
 		return false; // prevent submit
@@ -32,6 +32,6 @@ var isNotEmpty = function(value){
 	if (value && value !== ''){
 		return true;
 	}
-	Bert.alert("Please fill in all fields", "danger", "growl-top-right");
+	Bert.alert("请填写所有表单", "danger", "growl-top-right");
 	return false;
 };

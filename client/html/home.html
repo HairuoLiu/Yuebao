@@ -1,34 +1,240 @@
-<template name="jokes">
+<template name="home">
+    <!--<div class="parallax-container">-->
+    <div class="YBparallax-container">
+        <div class="slider fullscreen">
+            <ul class="slides blue-text">
+                <li>
+                    <img src="slide1.png">
+                    <!-- random image -->
+                    <div class="caption center-align">
+                        <h1 class="header center">悦宝园美式幼儿园</h1>
+                        <div class="row center">
+                            <h5 class="header col s12">只为打造最棒的美式幼儿教育</h5>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="slide2.png">
+                    <!-- random image -->
+                    <div class="caption left-align">
+                        <h1 class="header text-white">悦宝园美式幼儿园</h1>
+                        <div class="row">
+                            <h5 class="header col s12 light">只为打造最棒的美式幼儿教育</h5>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="slide3.png">
+                    <!-- random image -->
+                    <div class="caption right-align">
+                        <h1>悦宝园美式幼儿园</h1>
+                        <h5 class="light grey-text text-lighten-3">只为打造最棒的美式幼儿教育</h5>
+                    </div>
+                </li>
+                <li>
+                    <img src="slide0.png">
+                    <!-- random image -->
+                    <div class="caption center-align">
+                        <h3>悦宝园美式幼儿园</h3>
+                        <h5 class="light grey-text text-lighten-3">只为打造最棒的美式幼儿教育</h5>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- </div>-->
 
-	{{> jokeForm}}
-	
-	{{#each jokes}}
-	<!-- Joke -->
-	<div class="joke">
-		<div class="row">
-			<div class=".col-sm-6 .col-md-5 .col-lg-6" id="info">
-				<h1 class="joke-title">{{jokeName}}</h1>
-				<p class="meta">Author: {{author}}</p>
-				<p class="meta">Posted On: {{date}}</p>
-			</div>
-			<div class=".col-sm-6 .col-md-5 .col-md-offset-2 .col-lg-6 .col-lg-offset-0" id="vote">
-				<img src="laugh.png" class="smiley" id="laugh">
-				<img src="frown.png" class="smiley" id="frown">
-				<img src="puke.png" class="smiley" id="puke">
-			</div>
-			<div class="row" id="score">
-				<h3 class="count red block">{{laughScore}}</h3>
-				<h3 class="count yellow block">{{frownScore}}</h3>
-				<h3 class="count green block">{{pukeScore}}</h3>
-			</div>
-		</div>
+    <!-- 幼儿园介绍 -->
+      <div class="section YByellow">
+        <div class="container">
+            <div class="center">
+                <a class="btn-floating btn-large pulse light-green" href="#yuebao">
+                    <i class="material-icons">details</i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- 标题 -->
+    <h3 class="center">幼儿园环境设施</h3>
+    <div class="divider"></div>
+            
+    <div id="yuebao" class="section scrollspy YByellow">
+         <div class="container">
+            <br>
+            <!-- 幼儿园教育 -->
+            <div class="row">
+                <div class="col s12 m12 l8">
+                    <div class="center black">
+                        <!--<div class="video-container">
+                            <iframe width="540" height="200" src="http://www.youtube.com/embed/Q8TXgCzxEnw?rel=0" frameborder="0" allowfullscreen></iframe>
+                        </div>-->
+                        <div class="video-container">
+                            <object id="ssss" >
+                            <param name="allowScriptAccess" value="always" />
+                            <embed pluginspage="http://www.macromedia.com/go/getflashplayer" src="http://video.sina.com.cn/share/video/251238933.swf" type="application/x-shockwave-flash" name="ssss" allowFullScreen="true" allowScriptAccess="always" width="480" height="370" />
+                            </object>
+                        </div>
+                    </div>
+                    <!--<div class="video-container">
+                        <video width="300" height="200" controls autoplay>
+                            <source src="http://www.tutorialspoint.com/html5/foo.ogg" type="video/ogg" />
+                            <source src="http://www.tutorialspoint.com/html5/foo.mp4" type="video/mp4" /> Your browser does not support the video element.
+                        </video>
+                    </div>-->
+                </div>
+                <!--<div class="col s8 m8">
 
-		<p class="regular joke-desc">"{{jokePost}}"</p>
+                    <div class="card-panel valign-wrapper">
+                        <div class="carousel">
+                            <div class="carousel-item" href="#one!">
+                                <img src="people.jpg">
+                                <p class="center black-text">1</p>
+                            </div>
+                            <div class="carousel-item" href="#two!">
+                                <img src="people.jpg">
+                                <p class="center black-text">2</p>
+                            </div>
+                            <div class="carousel-item" href="#three!">
+                                <img src="people.jpg">
+                                <p class="center black-text">3</p>
+                            </div>
+                            <div class="carousel-item" href="#four!">
+                                <img src="people.jpg">
+                                <p class="center black-text">4</p>
+                            </div>
 
-	</div>
-	<!-- End Joke -->
-	{{else}}
-	<h1>no jokes to display</h1>
-	{{/each}}
+                        </div>
+                    </div>
+                </div>-->
+
+                <div class="col s12 m12 l4">
+                    <div class="card">
+                        <div class="card-content">
+                            <p> 有人性化的服务，更重要的是有一套能在运动、音乐和艺术方面全面开发宝宝潜能的完善课程。不断地寻找，不断地失望，现有的一些早教中心不是课程内容陈旧，就是课程不够丰富，无法全面涵盖运动，音乐和艺术。于是Michael和Babz决定为孩子们设计一个不同的世界。
+                                2004，Romp n' Roll 的全美第一家早教中心在弗吉尼亚州里士满成立。2007年开展特许加盟，在短短的3年里，Romp n' Roll 分中心遍布美国各州，成为最具活力和发展潜力的早教品牌。Romp
+                                n' Roll 的英文含义就是通过丰富多彩的课程和教学环境全方位开发宝宝的潜能</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="slide0.png">
+                            <span class="card-title">悦宝园课程一</span>
+                        </div>
+                        <div class="card-content">
+                            <p>悦宝园艺术</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">了解更多</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="slide0.png">
+                            <span class="card-title">悦宝园课程二</span>
+                        </div>
+                        <div class="card-content">
+                            <p>悦宝园运动</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">了解更多</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="slide0.png">
+                            <span class="card-title">悦宝园课程三</span>
+                        </div>
+                        <div class="card-content">
+                            <p>悦宝园音乐</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">了解更多</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+        </div>
+  </div>
+    <!-- 荣誉奖项 -->
+    <div class="section blue lighten-4">
+        <div class="container">
+            <h3 class="center">荣誉奖项</h3>
+            <div class="divider"></div>
+            <br>
+            <div class="row">
+                <div class="col s12 m6 l3">
+                    <div class="card hoverable">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img src="slide0.png">
+                            <span class="card-title">奖项一</span>
+                        </div>
+                        <div class="card-content">
+                            <p>悦宝园艺术</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m6 l3">
+                    <div class="card hoverable">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="slide0.png">
+                            <span class="card-title activator">奖项二</span>
+                        </div>
+                        <div class="card-content">
+                            <p>悦宝园运动</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m6 l3">
+                    <div class="card hoverable">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="slide0.png">
+                            <span class="card-title activator">奖项三</span>
+                        </div>
+                        <div class="card-content">
+                            <p>悦宝园音乐</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m6 l3">
+                    <div class="card hoverable">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="slide0.png">
+                            <span class="card-title activator">奖项四</span>
+                        </div>
+                        <div class="card-content ">
+                            <p>悦宝园音乐</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--奖项细节-->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>欢迎来到悦宝园美式幼儿园</h4>
+            <p>悦宝园美式幼儿园是一家</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">点击继续</a>
+        </div>
+    </div>
+
+
 
 </template>

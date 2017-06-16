@@ -1,10 +1,17 @@
-<template name="profile">
+<template name="profile" >
 {{#if currentUser}}
 	<!-- profile -->
 	<div id="profile-wrap">
 		<center>
 			{{#with UserImages}}
 			<img src="{{image}}" class="profile-img">
+			<form class="edit-profile" enctype="multipart/form-data">
+				<label for="profileImage">Choose Profile Image</label>
+				<span id="filename"></span>
+				<input type="file" name="profileImage" id="profileImage" class="black profileImage">
+				<br>
+				<button type="submit" value="Upload Photo" id="profile-btn" class="btn btn-sml btn-primary">Upload Photo</button>
+			</form>
 			{{else}}
 			<img src="github.svg" class="profile-img">
 			<form class="edit-profile" enctype="multipart/form-data">
@@ -30,7 +37,6 @@
 		</center>
 	</div>
 	<!-- End profile -->
-
 	{{#each userJokes}}
 	<!-- Joke -->
 	<div class="joke">
@@ -52,8 +58,8 @@
 			</div>
 		</div>
 
-		<p class="regular joke-desc">"{{jokePost}}"</p>
-		<button class="btn btn-sml btn-danger" id="delete-joke">Delete Joke</button>
+		<p class="regular joke-desc">"{{newsPost}}"</p>
+		<button class="btn btn-sml btn-danger" id="delete-joke">News</button>
 
 	</div>
 	<!-- End Joke -->
@@ -74,21 +80,6 @@
 
 {{/if}}
 </template>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
