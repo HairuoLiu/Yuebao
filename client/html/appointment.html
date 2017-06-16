@@ -1,0 +1,79 @@
+<template name="appointment">
+  <div class="container">
+    <div class="row">
+      <form class="col s12">
+        <!--宝宝姓名-->
+        <div class="row">
+          <div class="input-field col s12">
+            <input placeholder="宝宝姓名" id="babyname" type="text" class="validate">
+            <label for="babyname">悦宝园国际幼儿园预约</label>
+          </div>
+        </div>
+        <!--选择-->
+        <div class="row">
+          <div class="input-field col s6">
+            <select multiple>
+              <option value="" disabled selected>预约选择</option>
+              <option value="1">园区参观</option>
+              <option value="2">教师讲座</option>
+              <option value="3">更多</option>
+            </select>
+            <label>预约</label>
+          </div>
+          <div class="input-field col s6">
+            <select multiple>
+              <option value="" disabled selected>参观课程选择</option>
+              <option value="1">steam课程</option>
+              <option value="2">国际双语课程</option>
+              <option value="3">特色课程</option>
+            </select>
+            <label>参观课程</label>
+          </div>
+        </div>
+
+        <!--预约区间-->
+        <div class="row">
+          <div class="input-field col s6">
+            <label>开始日期</label>
+            <input id="beginDate" type="date" class="datepicker">
+          </div>
+          <div class="input-field col s6">
+            <label>结束日期</label>
+            <input id="endDate" type="date" class="datepicker">
+          </div>
+        </div>
+
+        <!--家长姓名-->
+        <div class="row">
+          <div class="input-field col s12">
+            <input placeholder="家长姓名" id="parentname" type="text" class="validate">
+            <label for="parentname">家长姓名</label>
+          </div>
+        </div>
+        <!--联系方式-->
+        <div class="row">
+          <div class="input-field col s6">
+            <input placeholder="13000012345" id="phone" type="text" class="validate" data-length="11">
+            <label for="phone">手机号码</label>
+          </div>
+          <div class="input-field col s6">
+            <input placeholder="contact@myemail.com" id="email" type="text" class="validate">
+            <label for="email">邮箱地址</label>
+          </div>
+        </div>
+        <!--详细描述-->
+        <div class="row">
+          <div class="input-field col s12">
+            <textarea id="description" class="materialize-textarea" type="text" data-length="140"></textarea>
+            <label for="description">详细描述</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <button class="waves-effect waves-light btn" type="submit"> 提交 </button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</template>

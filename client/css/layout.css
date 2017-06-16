@@ -1,0 +1,49 @@
+/* The main content */
+.main-content {
+  padding-top: 120px;
+  min-height: 600px; 
+  background-color: #FFF7D2;
+}
+/*backgroundColor*/
+.YByellow{
+    background-color: #FFF7D2;
+}
+.YBpurple{
+    background-color: #bd89d6;
+}
+.YBgreen{
+    background-color: #9FCA64;
+}
+.YBblue{
+    background-color: #b1c5e2;
+}
+/*Color*/
+.YByellowfont{
+    color: #FFF7D2;
+}
+.YBpurplefont{
+    color: #bd89d6;
+}
+.YBgreenfont{
+    color: #9FCA64;
+}
+.YBbluefont{
+    color: #b1c5e2;
+}
+
+.YByellowdivider{
+    height: 2px;
+    overflow: hidden;
+    background-color: #FFF7D2;
+}
+.YBpurpledivider{
+    height: 2px;
+    overflow: hidden;
+    background-color: #bd89d6;
+}
+
+.YBgreendivider{
+    height: 2px;
+    overflow: hidden;
+    background-color: #9FCA64;
+}

@@ -1,0 +1,79 @@
+<template name="class">
+    <div class="container">
+        <nav>
+            <div class="white nav-wrapper">
+                <a href="#" data-activates="slide-out" class="button-collapse">
+            <i class="medium teal-text mdi-navigation-menu"></i>
+            </a>
+                <a href="#!" class="teal-text brand-logo">Materialize CSS demo</a>
+            </div>
+        </nav>
+
+        <div>
+            <div class="col s12">
+                <ul class="tabs">
+                    <li class="tab col s3 teal"><a class="white-text" href="#test1">Test 1</a></li>
+                    <li class="tab col s3 teal"><a class="active white-text" href="#test2">Test 2</a></li>
+                    <li class="tab col s3 teal"><a class="white-text" href="#test3">Test 3</a></li>
+                </ul>
+            </div>
+
+            <div id="test2" class="col s12">
+                <ul class="collection">
+                    <li class="collection-item">Barbados Racoon
+                    </li>
+                    <a href="#!" id="enrichment_processesthreeDotAnchor" class="secondary-content" data-activates="enrichment_processes-menu2">
+        <i class="small teal-text mdi-navigation-more-vert"></i>
+      </a>
+
+                    <li class="collection-item">Common Dolphin</li>
+                    <li class="collection-item">Spotted Moray Eel</li>
+                    <li class="collection-item">Gray Parrot</li>
+                    <li class="collection-item">Black Bear</li>
+                </ul>
+                <ul id="enrichment_processes-menu2" class="dropdown-content collection">
+                    <li>one</li>
+                    <li>two</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <ul class="collapsible" data-collapsible="expandable">
+            <li class="active">
+                <div class="collapsible-header active"><i class="material-icons">filter_drama</i>First
+                    <a href="#!" onclick="alert('test'); return false;" id="enrichment_processesthreeDotAnchor" class="secondary-content" data-activates="enrichment_processes-menu">
+        <i class="small teal-text mdi-navigation-more-vert"></i>
+      </a>
+                </div>
+
+                <div class="collapsible-body" style="display: block;">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex ea commodo consequat.</p>
+                </div>
+            </li>
+            <li>
+                <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+                <div class="collapsible-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex ea commodo consequat.</p>
+                </div>
+            </li>
+            <li>
+                <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+                <div class="collapsible-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex ea commodo consequat.</p>
+                </div>
+            </li>
+        </ul>
+
+        <ul id="enrichment_processes-menu" class="dropdown-content collection">
+            <li>one</li>
+            <li>two</li>
+        </ul>
+    </div>
+</template>

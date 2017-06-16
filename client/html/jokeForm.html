@@ -1,0 +1,32 @@
+<template name="jokeForm">
+	{{#if currentUser}}
+	<!-- Joke Form-->
+	<div id="jokeForm-wrap">
+		<center>
+			<form class="joke-post">
+				<h2 class="jokeForm-heading">添加新闻</h2>
+				<label for="jokeName" class="sr-only">新闻名称</label>
+				<input type="text" name="jokeName" id="jokeName" class="form-control" placeholder="新闻名称" data-length="40">
+				<label for="jokePost" class="sr-only">内容简介</label>
+				<input type="text" name="jokePost" id="jokePost" class="form-control" placeholder="今天天气不错万里无云" data-length="140">
+				<label for="jokePost" class="sr-only">具体详情</label>
+				<input type="text" name="jokePost" id="jokePost" class="form-control" placeholder="2017年8月27日" data-length="140">
+
+				<button class="btn btn-lg btn-success btn-block" type="submit">发表新闻</button>
+			</form>
+		</center>
+	</div>
+	<!-- End Joke Form-->
+	{{else}}
+	<!-- Joke Form-->
+	<div id="jokeForm-wrap">
+		<center>
+			<form class="joke-post">
+				<h2 class="form-signin-heading">发表新闻请登陆</h2>
+				<a href="/" class="btn btn-md btn-primary" id="login-redir">登陆</a>
+			</form>
+		</center>
+	</div>
+	<!-- End Joke Form-->
+	{{/if}}
+</template>

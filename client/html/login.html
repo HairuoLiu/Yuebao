@@ -1,0 +1,17 @@
+<template name="login">
+	<div class="container">
+	{{#if currentUser}}
+	<h3 class="black">您已经登录<a href="/jokes">主页</a></h3>
+	{{else}}
+	<form class="form-signin">
+		<h2 class="form-signin-heading">账户登录</h2>
+		<label for="email" class="sr-only">邮箱地址</label>
+		<input type="email" name="email" id="email" class="form-control" placeholder="邮箱地址">
+		<label for="password" class="sr-only">密码</label>
+		<input type="password" name="password" id="password" class="form-control" placeholder="密码">
+		<button type="submit" id="login-btn" class="btn btn-lg btn-primary btn-block">登录</button>
+		<p>没有账户? <a href="/signup">注册账户</a></p>
+	</form>
+	{{/if}}
+	</div>
+</template>

@@ -1,0 +1,29 @@
+<template name="sidebar">
+	{{#if loggingIn}}
+	
+	<h1>登录中...</h1>
+
+	{{else}} 
+	{{#if currentUser}}
+	<aside class="sidebar-left YBpurple">
+		<img src="YB幼儿园.png" class="icon">
+		<a class="YB-logo white-text" href="#">管理员</a>
+		<div class="sidebar-links">
+			{{#if currentUser}}
+			<a class="link-red" href="/profile" id="profile-link"><i class="fa fa-user"></i>用户信息</a> 
+			{{else}} 
+			{{/if}}
+			<a class="link-blue" href="/jokes" id="jokes-link"><i class="fa fa-comments-o"></i>查看预约</a>
+			<a class="link-yellow" href="/rankings" id="rankings-link"><i class="fa fa-trophy"></i>Rankings</a>
+			<a class="link-green" href="/search" id="search-link"><i class="fa fa-search"></i>Search</a> 
+			{{#if currentUser}}
+			<a class="link-purple logout" href="#" id="logout-link"><i class="fa fa-sign-out"></i>登出</a> 
+			{{else}}
+			<a class="" href="/login" id="login-link"><i class="fa fa-sign-in"></i>登录</a> 
+			{{/if}}
+		</div>
+	</aside>
+
+	{{else}} {{/if}} 
+	{{/if}}
+</template>
