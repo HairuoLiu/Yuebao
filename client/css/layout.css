@@ -1,20 +1,24 @@
 /* The main content */
 .main-content{
     /*old*/
-    
     padding-top: 60px;
     min-height: 600px;
-    
 }
+
 .bg1{
-    background-image:url("/background1.jpg");
+    background:url(/background1.jpg);
 }
 .bg2{
-    background-image:url("/background2");
+    background-image:url(/background2);
+    width:100%;
+    position:relative;
 }
 .bg3{
-    background-image:url("/background1");
+    background-image:url(/background1);
+    width:100%;
+    position:relative;
 }
+
 .YBcard{
     border-radius: 10px;
     padding-top: 50px;
