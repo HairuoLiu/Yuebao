@@ -15,17 +15,17 @@
 }
 
 
-.form-signin {
+.login-form-signin {
 	width: 100%;
 	max-width: 500px;
 }
 
-.form-logo {
+.login-form-logo {
 	width: 100%;
 	margin-bottom: 10px;
 }
 
-.form-control {
+.login-form-control {
 	height: 55px;
 	margin-bottom: 10px;
 }

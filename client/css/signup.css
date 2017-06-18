@@ -3,7 +3,6 @@
 	max-width: 500px;
 }
 
-
 .login-background{
 	background:url(/login-background.jpg);
 	height:100%;
@@ -17,16 +16,15 @@
 
 .form-logo {
 	width: 100%;
-	margin-bottom: 10px;
 }
 
 .form-control {
-	height: 15px;
+	height: 10px;
 	margin-bottom: 10px;
 }
 
-#login-btn {
-	margin-bottom: 30px;
+#signup-btn {
+	margin-bottom: 10px;
 }
 
 @media (max-width: 768px) {

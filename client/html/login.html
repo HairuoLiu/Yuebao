@@ -11,14 +11,14 @@
 					{{#if currentUser}}
 						<h3 class="black-text center">您已经登录<a href="appointmentList">主页</a></h3>
 					{{else}}
-					<form class="form-signin center">
+					<form class="login-form-signin center">
 						<img class="form-logo" src="YB幼儿园.png" alt="">
 						<h3 class=" form-signin-heading center black-text">账号登录</h3>
 						<br> 
 						<label for="email" class="black-text sr-only">邮箱地址</label>
-						<input type="email" name="email" id="email" class=" black-text form-control center" placeholder=" 邮箱地址 ">
+						<input type="email" name="email" id="email" class=" black-text login-form-control center" placeholder=" 邮箱地址 ">
 						<label for="password" class="sr-only">登陆密码</label>
-						<input type="password" name="password" id="password" class="form-control center" placeholder="登陆密码">
+						<input type="password" name="password" id="password" class="login-form-control center" placeholder="登陆密码">
 						<button type="submit" id="login-btn" class="YBlogin-btn center waves-effect waves-light white-text">登录</button>
 						<p class="center black-text">没有账号?
 							<a href="/signup">注册账号</a>
