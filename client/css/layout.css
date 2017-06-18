@@ -5,9 +5,10 @@
     min-height: 600px;
 }
 
-.bg{
-    background:url(/background1.png);
-    /*background:url(/);*/
+.bg1{
+    background:url(/background.png);
+    width:100%;
+    position:relative;
 }
 .bg2{
     background-image:url(/background2);
