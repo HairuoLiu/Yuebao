@@ -6,9 +6,21 @@
     min-height: 600px;
     
 }
-
+.bg1{
+    background-image:url("/background1.jpg");
+}
+.bg2{
+    background-image:url("/background2");
+}
+.bg3{
+    background-image:url("/background1");
+}
 .YBcard{
-    
+    border-radius: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 /* YB背景色 */
