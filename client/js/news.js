@@ -1,6 +1,8 @@
 Template.news.rendered = function (){
      $(document).ready(function () {
         $('.carousel').carousel();
+        $('.slider').slider();
+        $('.slider').slider('start');
     });
     
     $('.carousel.carousel-slider').carousel({
@@ -8,13 +10,8 @@ Template.news.rendered = function (){
     });
 
     $('.collapsible').collapsible();
-
-    $(document).ready(function(){
-      $('.slider').slider();
-    });
     
-    // Start slider
-    $('.slider').slider('start');
+    // Start slider 
 }
 
 // Template.news.helpers({  
