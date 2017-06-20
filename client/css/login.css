@@ -1,7 +1,14 @@
+
+.form-signin {
+	width: 100%;
+	max-width: 500px;
+}
+
 .login-form{
     padding: 24px 24px 20px;
     position: relative;
 }
+
 
 .login-background{
 	background:url(/login-background.jpg);
@@ -14,11 +21,6 @@
 	bottom:-125px;
 }
 
-
-.login-form-signin {
-	width: 100%;
-	max-width: 500px;
-}
 
 .login-form-logo {
 	width: 100%;

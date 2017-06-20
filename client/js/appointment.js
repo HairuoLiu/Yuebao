@@ -1,6 +1,6 @@
 Template.appointment.rendered = function () {
     $(document).ready(function() {
-        $('phone,description').characterCounter();
+        $('input#phone,textarea#description').characterCounter();
     });
     $(document).ready(function () {
         $('select').material_select();

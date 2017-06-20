@@ -5,10 +5,22 @@
         <div class="container">
             <!--<iframe src=""></iframe>-->
 
-            <form class="newspost">
-                <h2 class="heading">添加新闻</h2>
+            <form class="newspost YBcard YBgreen white-text">
+                <h2 class="heading ">添加新闻</h2>
+
                 <label for="newsName" class="sr-only">新闻名称</label>
-                <input type="text" name="newsName" id="newsName" class="form-control" placeholder="新闻名称" data-length="40">
+                <input type="text" name="newsName" id="newsName" class="form-control" placeholder="新闻标题" data-length="30">
+
+                <div class="file-field input-field">
+                    <div class="btn white black-text">
+                        <span>上传图片</span>
+                        <input type="file" multiple>
+                    </div>
+                    <div class="file-path-wrapper">
+                        <input class="file-path validate" type="text" placeholder="上传多张照片">
+                    </div>
+                </div>
+
                 <label for="newsPost" class="sr-only">内容简介</label>
                 <input type="text" name="newsPost" id="newsPost" class="form-control" placeholder="今天天气不错万里无云" data-length="140">
                 <label for="newsDetail" class="sr-only">具体详情</label>
@@ -17,19 +29,19 @@
             </form>
         </div>
     </div>
-    
-        <!-- End Joke Form-->
-        {{else}}
-        <!-- Joke Form-->
-        <div class="section ">
-            <center>
-                <form class="newsPost">
-                    <h2 class="form-signin-heading">发表新闻请登陆</h2>
-                    <a href="/" class="btn btn-md btn-primary" id="login-redir">登陆</a>
-                </form>
-            </center>
-        </div>
-        <!-- End Joke Form-->
-    
+
+    <!-- End Joke Form-->
+    {{else}}
+    <!-- Joke Form-->
+    <div class="section ">
+        <center>
+            <form class="newsPost">
+                <h2 class="form-signin-heading">发表新闻请登陆</h2>
+                <a href="/" class="btn btn-md btn-primary" id="login-redir">登陆</a>
+            </form>
+        </center>
+    </div>
+    <!-- End Joke Form-->
+
     {{/if}}
 </template>
