@@ -3,6 +3,13 @@
     margin: auto;
 }
 
+.YBbtn{
+     min-width: 120px;
+    max-height: 25px;
+    margin-top:20px;
+    margin-bottom:20px;
+    background-color: blue;
+}
 
 /* new header */
 

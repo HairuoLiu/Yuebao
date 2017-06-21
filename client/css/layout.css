@@ -5,6 +5,13 @@
     min-height: 600px;
 }
 
+.YBYY{
+    border-radius: 10px;
+}
+.opacity{
+    opacity: 0.9;
+}
+
 .bg1{
     background:url(/background.png);
     
@@ -22,8 +29,8 @@
 
 .YBcard{
     border-radius: 10px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -42,7 +49,7 @@
     background-color: #FFF7D2;
 }
 .YBpurple{
-    background-color: #bd89d6;
+    background-color: #95519e;
 }
 .YBgreen{
     background-color: #9FCA64;
@@ -55,7 +62,7 @@
     color: #FFF7D2;
 }
 .YBpurplefont{
-    color: #bd89d6;
+    color: #95519e;
 }
 .YBgreenfont{
     color: #9FCA64;
@@ -72,7 +79,7 @@
 .YBpurpledivider{
     height: 1px;
     overflow: hidden;
-    background-color: #bd89d6;
+    background-color: #95519e;
 }
 
 .YBgreendivider{
