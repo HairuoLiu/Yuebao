@@ -1,6 +1,41 @@
 Template.postNews.rendered = function () {
     
 }
+
+
+Template.postNews.helpers({
+    username: function() {
+		if(!Meteor.user()) {
+			Bert.alert("您没有登陆, 拒绝访问 ", "danger", "growl-top-right");
+			return false;
+		} else {
+			return Meteor.user().username;
+		}
+	}, 
+
+	userNews: function() {
+		var username = Meteor.user().username;
+		var userId = Meteor.userId();
+		var userJokes = Jokes.find({userId: userId}, {sort: {createdAt: -1}});
+		return userJokes;
+	},
+    
+    UserImages: function() {
+		var username = Meteor.user().username;
+		var userId = Meteor.userId();
+		var URL = UserImages.findOne({username: username}, {userId: userId});
+		return URL;
+	},
+    
+    NewsImages: function() {
+		var username = Meteor.user().username;
+		var userId = Meteor.userId();
+		var URL = NewsImages.find({username: username}, {userId: userId});
+		return URL;
+	}
+
+});
+
 Template.postNews.events({
 	"click #delete-news": function() {
 		Meteor.call("removeNews", this._id);

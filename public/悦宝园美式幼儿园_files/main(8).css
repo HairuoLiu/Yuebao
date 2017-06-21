@@ -1,0 +1,89 @@
+/* Instructions: Change the word Pub to your package name */
+
+.MeteorToys_Pub_header, .MeteorToys_Pub_content {
+	min-width: 304px; /* box width minus 8px from each side */
+}
+
+.MeteorToys_Pub_header {
+	line-height: 28px;
+	background:  rgba(0,0,0,.36);
+	text-indent: 8px;
+	overflow:  hidden;
+}
+
+.MeteorToys_Pub_content {
+	height:  calc(100% - 28px);
+
+}
+.MeteorToys_Pub_content .MeteorToys_row_hoverable:hover {
+	margin: 0 -9px !important;
+	padding-left: 9px !important;
+	padding-right: 9px !important;
+}
+.MeteorToys_Pub_button { 
+	float:       right;
+	border-left: 1px solid rgba(0,0,0,.3);
+	padding:     0 9px;
+	text-indent: 0px;
+	line-height: inherit !important;
+	margin-right: -304px;
+	transition: .25s;
+	-webkit-transition: .25s;
+}
+
+.MeteorToys_button_displayable {
+	margin-right: 0px;
+}
+
+.MeteorToys_Pub_button:hover {
+	cursor: pointer;
+	color: rgba(131, 202, 237, 1);
+}
+
+.MeteorToys_Pub_contents {
+	width: 612px;
+	height: 331px;
+	transition: .25s;
+	-webkit-transition: .25s;
+}
+.MeteorToys_Pub_contenta {
+	width: 306px;
+	height: 278px;
+	float: left;
+	padding: 0px 9px;
+	overflow-x: hidden !important;
+	overflow-y: scroll !important;
+	position: relative;
+}
+.MeteorToys_Pub_contentb {
+	width: 306px;
+	height: 278px;
+	float: left;
+	padding: 0px 9px;
+	overflow-x: hidden !important;
+	overflow-y: scroll !important;
+	position: relative;
+}
+.MeteorToys_Pub_contentc {
+	margin-left: -306px;
+}
+
+#MeteorToys_pub_clear {
+	margin-right: 9px !important;
+
+}
+
+#MeteorToys_pub_call, #MeteorToys_pub_clear {
+	float: right;
+	margin-left: 9px;
+	line-height: 28px !important;
+	height: 28px;
+	cursor: pointer;
+}
+
+.MeteorToys_pub_subDiv {
+	position: relative;
+	padding-bottom: 84px;
+	min-height: 100%;
+}
+
