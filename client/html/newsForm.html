@@ -1,13 +1,53 @@
 <template name="newsForm">
     {{#if currentUser}}
+
     <!-- Joke Form-->
     <div class="section">
         <div class="container">
-            <!--<iframe src=""></iframe>-->
 
-            <form class="newspost YBcard YBgreen white-text">
+            <div class="newspost">
+                <h3>添加新闻</h3>
+                <div class="toolbar">
+                    <button type="button" data-func="bold"><i class="fa fa-bold"></i></button>
+                    <button type="button" data-func="italic"><i class="fa fa-italic"></i></button>
+                    <button type="button" data-func="underline"><i class="fa fa-underline"></i></button>
+                    <button type="button" data-func="strikeThrough"><i class="fa fa-strikethrough"></i></button>
+                    <button type="button" data-func="justifyleft"><i class="fa fa-align-left"></i></button>
+                    <button type="button" data-func="justifycenter"><i class="fa fa-align-center"></i></button>
+                    <button type="button" data-func="justifyright"><i class="fa fa-align-right"></i></button>
+                    <button type="button" data-func="insertunorderedlist"><i class="fa fa-list-ul"></i></button>
+                    <button type="button" data-func="insertorderedlist"><i class="fa fa-list-ol"></i></button>
+                    <button type="button" data-func="undo"><i class="fa fa-undo"></i></button>
+                    <button type="button" data-func="redo"><i class="fa fa-repeat"></i></button>
+
+                    <div class="customSelect">
+                        <select data-func="foreColor">
+					<option value="OrangeRed">紅</option>
+					<option value="Coral">橙</option>
+					<option value="Gold">黃</option>
+					<option value="ForestGreen">綠</option>
+					<option value="CornflowerBlue">藍</option>
+					<option value="DarkMagenta">紫</option>
+					<option value="Black" selected>黑</option>
+				</select>
+                    </div>
+                </div>
+                <div class="editor" contenteditable></div>
+                <div class="buttons">
+                    <button onclick="preview()" type="button">预览</button>
+                    <button onclick="post()" type="button">发布新闻</button>
+                </div>
+                <br><br><br>
+                <hr>
+                <div class="preview" id="review">
+                    
+                </div>
+            </div>
+
+            
+            <!--老的-->
+            <!--<form class="newspost YBcard YBgreen white-text">
                 <h2 class="heading ">添加新闻</h2>
-
                 <label for="newsName" class="sr-only">新闻名称</label>
                 <input type="text" name="newsName" id="newsName" class="form-control" placeholder="新闻标题" data-length="30">
 
@@ -26,7 +66,7 @@
                 <label for="newsDetail" class="sr-only">具体详情</label>
                 <input type="text" name="newsDetail" id="newsDetail" class="form-control" placeholder="2017年8月27日" data-length="140">
                 <button class="btn btn-lg btn-success btn-block" type="submit">发表新闻</button>
-            </form>
+            </form>-->
         </div>
     </div>
 

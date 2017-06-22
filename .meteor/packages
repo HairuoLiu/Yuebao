@@ -33,3 +33,4 @@ easy:search
 easysearch:elasticsearch
 easysearch:autosuggest
 dynamic-import
+
