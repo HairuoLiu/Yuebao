@@ -1,10 +1,18 @@
-.problem-background{
-    background:url(/problem-background.jpg);
-    width:100%;
-    position:relative;
+.problem-background {
+    background: url(/problem-background.jpg);
+    width: 100%;
+    position: relative;
 }
 
-.SX-image{
+.SX-image {
     width: 100%;
     height: 100%
+}
+
+.place {
+    margin: 20vh auto 0 auto;
+    width: 80%;
+    padding: 40px 0;
+    border-radius: 20px;
+    background: white;
 }

@@ -5,7 +5,9 @@ Template.teacher.rendered = function () {
       $(document).ready(function () {
         $('ul.tabs').tabs();
         $('.carousel').carousel();
-        $('.collapsible').collapsible();
+        $('.collapsible').collapsible(); 
+        $('.materialboxed').materialbox();
+
       });
       
      

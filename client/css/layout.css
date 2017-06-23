@@ -3,6 +3,23 @@
     /*old*/
     padding-top: 60px;
     min-height: 600px;
+
+}
+
+
+.YBparallax-container {
+    position: relative;
+    overflow: hidden;
+    height: 560px;
+}
+
+.front{
+    position:absolute;
+    z-index: 1100;
+}
+
+.back{
+    position:relative;
 }
 
 .YBYY{

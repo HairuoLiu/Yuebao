@@ -1,8 +1,3 @@
- .YBparallax-container {
-    position: relative;
-    overflow: hidden;
-    height: 560px;
-}
 
 .title{
     padding-bottom: 10px;
@@ -15,18 +10,18 @@
 }
 
 .homeL1{
-    background-color: #e1a4e8;
+    background-color: #ace5f3 ;
 }
 .homeL1-1{
-    background-color: #c870d3;
+    background-color: #6acfe8 ;
+}
+.homeL{
+    background-color: #f3f3f3;
 }
 .homeL2{
-    background-color: #feddff;
-}
-.homeL3{
-    background-color: #f48fb1;
+    background-color: #fbacd5;
 }
 
 .homeL4{
-    background-color: #949494;
+    background-color: #383838;
 }

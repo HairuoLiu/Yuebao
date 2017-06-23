@@ -1,23 +1,45 @@
 <template name="contactus">
     <div class="section bg1">
         <div class="container ">
-                <h3 class="center">幼儿园地址</h3>
-                <div class="divider"></div>
-                <br>
-                <div class="row YBcard valign-wrapper blue lighten-4">
-                    <div class="col s6">
-                        <div class="card-panel">
-                            <img class="responsive-img" src="map.png" alt="">
-                        </div>
+
+
+
+            <div class="row YBcard valign-wrapper blue lighten-4">
+                <div class="col s6">
+                    <h3 class="center">幼儿园地址</h3>
+                    <div class="divider"></div>
+                    <br>
+                    <div class="card-panel">
+                        <img class="responsive-img" src="map.png" alt="">
                     </div>
-                    <div class="col s6">
-                        <div class="card-panel">
-                            <span class="black-text">
-                            悦宝园美式幼儿园<br>地址：北京市朝阳区
-                            </span>
-                        </div>            
+                </div>
+                <div class="col s6">
+                    <div class="card-panel alcaramel" style="min-height: 640px;">
+                        <h6>悦宝园总部信息</h6>
+                        <hr>
+                        <span class="detail-title"><i class="mdi-communication-location-on"></i>地址：</span>
+                        <span class="">北京市北三环西路甲18号大钟寺中坤广场C座3层</span>
+                        <hr>
+                        <span class="detail-title"><i class="mdi-device-access-time"></i> Opening Hours</span>
+                        <ul class="opening-hours">
+                            <li>周一: 09:00 - 17:00</li>
+                            <li>周二: 09:00 - 17:00</li>
+                            <li>周三: 09:00 - 17:00</li>
+                            <li>周四: 09:00 - 17:00</li>
+                            <li>周五: 09:00 - 17:00</li>
+                            <li>周六: 10:00 - 17:00</li>
+                            <li>周日: 10:00 - 17:00</li>
+                        </ul>
+                        <hr>
+                        <span class="detail-title"><i class="mdi-maps-map"></i> 点击打开地图 </span>
+                        <a href='http://api.map.baidu.com/geocoder?address=美国悦宝园中国区总部&output=html' target='_blank'> 
+                            <img style="margin:2px" width="400" height="300" src="http://api.map.baidu.com/staticimage?width=400&height=300&zoom=11¢er=美国悦宝园中国区总部" />
+                        </a>
+                        <hr>
+
                     </div>
-            </div>   
+                </div>
+            </div>
         </div>
     </div>
 </template>
