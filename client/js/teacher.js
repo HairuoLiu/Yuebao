@@ -10,5 +10,5 @@ Template.teacher.rendered = function () {
 
       });
       
-     
+      Materialize.toast('专业师资', 3000, 'rounded green') // 'rounded' is the class I'm applying to the toast
 }

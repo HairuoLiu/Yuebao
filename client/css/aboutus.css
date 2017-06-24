@@ -7,7 +7,6 @@
     margin-bottom: 1em;
     font-size: 22px;
     font-weight: 400;
-    text-align: left;
 }
 .section-title:before {
     content: "";
