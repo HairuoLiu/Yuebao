@@ -6,6 +6,7 @@ Template.newsForm.rendered = function () {
 		var $value = $(this).find(':selected').val();
 		document.execCommand($(this).data('func'), false, $value);
 	})
+	
 
 }
 

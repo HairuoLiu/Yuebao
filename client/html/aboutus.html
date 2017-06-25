@@ -1,79 +1,13 @@
 <template name="aboutus">
-  <div>
-    <div class="col s12">
-      <ul class="tabs">
-        <li class="tab col s3 teal"><a class="white-text" href="#test1">Test 1</a></li>
-        <li class="tab col s3 teal"><a class="active white-text" href="#test2">Test 2</a></li>
-        <li class="tab col s3 teal"><a class="white-text" href="#test3">Test 3</a></li>
-      </ul>
-    </div>
-
-    <div id="test2" class="col s12">
-      <ul class="collection">
-        <li class="collection-item">Barbados Racoon
-        </li>
-        <a href="#!" id="enrichment_processesthreeDotAnchor" class="secondary-content" data-activates="enrichment_processes-menu2">
-        <i class="small teal-text mdi-navigation-more-vert"></i>
-      </a>
-
-        <li class="collection-item">Common Dolphin</li>
-        <li class="collection-item">Spotted Moray Eel</li>
-        <li class="collection-item">Gray Parrot</li>
-        <li class="collection-item">Black Bear</li>
-      </ul>
-      <ul id="enrichment_processes-menu2" class="dropdown-content collection">
-        <li>one</li>
-        <li>two</li>
-      </ul>
-    </div>
-
-  </div>
-
-  <ul class="collapsible" data-collapsible="expandable">
-    <li class="active">
-      <div class="collapsible-header active"><i class="material-icons">filter_drama</i>First
-        <a href="#!" onclick="alert('test'); return false;" id="enrichment_processesthreeDotAnchor" class="secondary-content" data-activates="enrichment_processes-menu">
-        <i class="small teal-text mdi-navigation-more-vert"></i>
-      </a>
-      </div>
-
-      <div class="collapsible-body" style="display: block;">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div>
-    </li>
-    <li>
-      <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
-      <div class="collapsible-body">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div>
-    </li>
-    <li>
-      <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
-      <div class="collapsible-body">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div>
-    </li>
-  </ul>
-
-  <ul id="enrichment_processes-menu" class="dropdown-content collection">
-    <li>one</li>
-    <li>two</li>
-  </ul>
-
-
 
   <!-- aboutus section -->
   <div class="parallax-container">
     <div class="parallax">
-      <img src="slide1.png">
+      <img src="学习方案.jpg">
     </div>
   </div>
 
-  <div class="section blue lighten-4">
-
+  <div class="section">
     <div class="blue lighten-4">
       <div class="container">
         <div class="row">
@@ -81,46 +15,49 @@
           <div class="divider"></div>
           <br>
           <div class="col s12 m4">
-            <div class="card">
-              <div class="card-image">
-                <img src="slide0.png">
-                <span class="card-title">品牌故事</span>
+            <div class="card center">
+              <div class="card-image YBgreen">
+                <img src="YB幼儿园.png">
+                <!--<span class="card-title">品牌故事</span>-->
               </div>
-              <div class="card-content">
-                <p>悦宝园艺术</p>
+              <div class="card-content  black-text">
+                 <p>品牌故事</p>
+                <p>五十年的研究沉淀</p>
               </div>
               <div class="card-action">
-                <a href="#">了解更多</a>
+                <a href="#story">了解更多</a>
               </div>
             </div>
           </div>
 
           <div class="col s12 m4">
-            <div class="card">
+            <div class="card center">
               <div class="card-image">
                 <img src="幼儿园介绍.png">
-                <span class="card-title">幼儿园介绍</span>
+                <!--<span class="card-title"></span>-->
               </div>
-              <div class="card-content">
-                <p>悦宝园运动</p>
+              <div class="card-content black-text">
+                <p>幼儿园介绍</p>
+                <p>小手拥抱大世界</p>
               </div>
               <div class="card-action">
-                <a href="#">了解更多</a>
+                <a href="#introduction">了解更多</a>
               </div>
             </div>
           </div>
 
           <div class="col s12 m4">
-            <div class="card">
-              <div class="card-image">
-                <img src="slide0.png">
-                <span class="card-title">荣誉奖项</span>
+            <div class="card center">
+              <div class="card-image red darken-4">
+                <img src="荣誉奖项.png">
+                <!--<span class="card-title"></span>-->
               </div>
-              <div class="card-content">
-                <p>悦宝园音乐</p>
+              <div class="card-content black-text">
+                <p>荣誉奖项</p>
+                <p>各界的广泛认可</p>
               </div>
               <div class="card-action">
-                <a href="#">了解更多</a>
+                <a href="#certificate">了解更多</a>
               </div>
             </div>
           </div>
@@ -130,12 +67,14 @@
     </div>
   </div>
 
-  <div class="section">
+  <div id="story" class="section">
     <div class="container">
+      <h2 class="header center">品牌故事</h2>
+      <div class="divider"></div>
+      <br>
       <div class="col s12 m8">
-        <h2 class="header   section-title">
-
-          <span class="white YBpurplefont">五十年的研究沉淀</span>
+        <h2 class="header section-title">
+          <span class="white YBpurplefont"><i class="material-icons">import_contacts</i>五十年的研究沉淀</span>
         </h2>
         <ul class="Yuebao_tmtimeline">
           <li>
@@ -263,22 +202,37 @@
 
 
   <div class="parallax-container">
-    <div class="parallax"><img src="slide2.jpg"></div>
+    <div class="container">
+      <br><br><br><br>
+      <h1 class="header center">关于悦宝园</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">来自美国本土的，新时代早教品牌</h5>
+      </div>
+      <div class="row center">
+        <a href="http://www.rompy.cn/rompycenter/About.shtml" class="btn-large waves-effect waves-light blue white-text">了解更多</a>
+      </div>
+      <br>
+    </div>
+    <div class="parallax"><img src="学习方案.jpg"></div>
   </div>
 
-  <div class="section YByellow">
+  <div id="introduction"  class="section YByellow">
     <div class="container">
-      <h2 class="header center">幼儿园介绍</h2>
+      <h2 class="center">幼儿园介绍</h2>
+
+      <h2 class="header blue-text accent-3 lighten-1 section-title center">
+        <span class="YByellow black-text"><i class="material-icons">star</i>悦宝园国际幼儿园——小手拥抱大世界</span>
+      </h2>
       <div class="divider"></div>
       <br>
       <div class="row">
 
         <div class="col s12 m6">
-          <h2 class="header indigo-text lighten-1 section-title">
-            <span class="YByellow"><a><i class="material-icons">wb_sunny</i>悦宝园国际幼儿园——小手拥抱大世界</a></span>
+          <h2 class="header section-title">
+            <span class="YByellow"><a class="black-text"><i class="material-icons">wb_sunny</i>关于悦宝园国际幼儿园</a></span>
           </h2>
 
-          <div class=" card-panel indigo lighten-4">
+          <div class=" card-panel ">
             <span class="text-grey darken-4">
               <i class="material-icons YBcool">wb_sunny</i>
               悦宝园国际幼儿园（Romp n' International Kindergarten）是悦宝园国际儿童教育集团投资与管理的全国连锁国际幼儿园，是一所融合中、西方教学理念，真正符合并超越国际化定位的“亲幼一体式”幼儿园，为0-6岁儿童提供“一站式”学前教育服务。其英语浸入式课程为中国教育学会”十二五“科研重点课题，获得“全国AAA级放心示范幼儿园”的荣誉。
@@ -288,12 +242,12 @@
         </div>
 
         <div class="col s12 m3">
-          <h2 class="header indigo-text lighten-1 section-title">
+          <h2 class="header section-title">
             <span class="YByellow"><a><i class="material-icons">school</i>教育理念</a></span>
           </h2>
 
-          <div class="tweet-card card-panel indigo lighten-4">
-            <span class="text-grey darken-4">
+          <div class="tweet-card card-panel teal accent-3">
+            <span class="">
               <i class="material-icons YBcool">school</i>
               让孩子在快乐中体验、学习、成长。
           </span>
@@ -304,7 +258,7 @@
             <span class="YByellow"><a><i class="material-icons">toys</i>教育方法</a></span>
           </h2>
 
-          <div class="tweet-card card-panel indigo lighten-4">
+          <div class="tweet-card card-panel cyan accent-3">
             <span class="text-grey darken-4">
               <i class="material-icons YBcool">toys</i>
               让孩子在游戏、体验、操作中做中学、玩中学！
@@ -316,7 +270,7 @@
             <span class="YByellow"><a><i class="material-icons">my_location</i>教育目标</a></span>
           </h2>
 
-          <div class="tweet-card card-panel indigo lighten-4">
+          <div class="tweet-card card-panel light-blue accent-3">
             <span class="text-grey darken-4">
               <i class="material-icons YBcool">my_location</i>
               培养具有深厚美学修养和蓬勃创造力的儿童。
@@ -328,7 +282,7 @@
             <span class="YByellow"><a><i class="material-icons">local_florist</i>核心价值观</a></span>
           </h2>
 
-          <div class="tweet-card card-panel indigo lighten-4">
+          <div class="tweet-card card-panel cyan lighten-1">
             <span class="text-grey darken-4">
               <i class="material-icons YBcool">local_florist</i>
               教会孩子们美与创造。
@@ -338,12 +292,12 @@
       </div>
 
       <div class="section fun-facts center ">
-        <h2 class="header blue-text accent-3 lighten-1 section-maintitle center">
+        <h2 class="header section-maintitle center">
           <span class="YByellow"><i class="material-icons">filter_8</i>选择悦宝园的八大理由</span>
         </h2>
         <div class="row">
           <div class="col s12 m3 ">
-            <div class="card blue accent-3 reason">
+            <div class="card purple lighten-3 reason">
               <div class="card-content white-text">
                 <i class="material-icons">language</i>
                 <span class="card-title">全球顶级幼儿全浸入式英语学习方案</span>
@@ -354,7 +308,7 @@
             </div>
           </div>
           <div class="col s12 m3 ">
-            <div class="card blue accent-3 reason">
+            <div class="card purple lighten-3 reason">
               <a href="#modal1" class="modal-trigger">
                 <div class="card-content white-text">
                   <i class="material-icons">person_outline</i>
@@ -368,7 +322,7 @@
             </div>
           </div>
           <div class="col s12 m3">
-            <div class="card blue accent-3 reason">
+            <div class="card purple lighten-3 reason">
               <div class="card-content white-text">
                 <i class="material-icons">casino</i>
                 <span class="card-title">新游戏</span>
@@ -380,7 +334,7 @@
             </div>
           </div>
           <div class="col s12 m3">
-            <div class="card blue accent-3 reason">
+            <div class="card purple lighten-3 reason">
               <div class="card-content white-text">
                 <i class="material-icons">filter_vintage</i>
                 <span class="card-title">成长的角色</span>
@@ -394,7 +348,7 @@
         </div>
         <div class="row">
           <div class="col s12 m3">
-            <div class="card blue accent-3 reason">
+            <div class="card purple lighten-3 reason">
               <div class="card-content white-text">
                 <i class="material-icons">sentiment_very_satisfied</i>
                 <span class="card-title">从心开始</span>
@@ -406,7 +360,7 @@
             </div>
           </div>
           <div class="col s12 m3">
-            <div class="card blue accent-3 reason">
+            <div class="card purple lighten-3 reason">
               <div class="card-content white-text">
                 <i class="material-icons">color_lens</i>
                 <span class="card-title">艺术启蒙</span>
@@ -418,7 +372,7 @@
             </div>
           </div>
           <div class="col s12 m3">
-            <div class="card blue accent-3 reason">
+            <div class="card purple lighten-3 reason">
               <a href="/moves">
                 <div class="card-content white-text">
                   <i class="material-icons">touch_app</i>
@@ -432,7 +386,7 @@
             </div>
           </div>
           <div class="col s12 m3">
-            <div class="card blue accent-3 reason">
+            <div class="card purple lighten-3 reason">
               <div class="card-content white-text">
                 <i class="material-icons">account_balance</i>
                 <span class="card-title">健康生活</span>
@@ -445,85 +399,56 @@
         </div>
       </div>
     </div>
- <!-- 品牌故事 -->
-    <!--<div class="container">
-      <h3 class="center white-text YBcard pink lighten-3">品牌故事</h3>
-     
-      <div class="row ">
-        <div class="col s12 m12 l6">
-          <div class="card pink lighten-2">
-            <div class="card-image">
-              <img src="slide0.png">
-            </div>
-
-          </div>
-        </div>
-        <div class="col s12 m12 l6">
-          <div class="YBcard pink lighten-1">
-            <p>作为两个孩子的父母，Michael和Babz一心为孩子们寻找一个适合他们发展的早教中心。</p>
-            <p> 那里应该有安全的设备，有充满激情的老师，有舒适卫生的环境，有人性化的服务，更重要的是有一套能在运动、音乐和艺术方面全面开发宝宝潜能的完善课程。不断地寻找，不断地失望，现有的一些早教中心不是课程内容陈旧，就是课程不够丰富，无法全面涵盖运动，音乐和艺术。于是Michael和Babz决定为孩子们设计一个不同的世界。
-              2004，Romp n' Roll 的全美第一家早教中心在弗吉尼亚州里士满成立。2007年开展特许加盟，在短短的3年里，Romp n' Roll 分中心遍布美国各州，成为最具活力和发展潜力的早教品牌。Romp n'
-              Roll 的英文含义就是通过丰富多彩的课程和教学环境全方位开发宝宝的潜能。</p>
-          </div>
-        </div>
-      </div>
-    </div>-->
   </div>
 
-  <!-- class section-->
-  <div class="section blue lighten-4">
+  <!-- 荣誉奖项 -->
+  <div id="certificate" class="section homeL fun-facts">
     <div class="container">
-      <h3 class="center">荣誉奖项</h3>
+      <h2 class="center">荣誉奖项</h2>
+
+      <h2 class="header blue-text accent-3 lighten-1 section-title center">
+        <span class="homeL black-text"><i class="material-icons">star</i>悦宝园在中国成立以来获得了各界的广泛认可，屡获嘉奖！</span>
+      </h2>
       <div class="divider"></div>
       <br>
+
+
       <div class="row">
-        <div class="col s12 m6 l3">
-          <div class="card hoverable">
-            <div class="card-image waves-effect waves-block waves-light">
-              <img src="slide0.png">
-              <span class="card-title">奖项一</span>
-            </div>
-            <div class="card-content">
-              <p>悦宝园艺术</p>
-            </div>
-          </div>
+        <div class="col s4 m3">
+          <img class="responsive-img materialboxed" data-caption="AAA级放心示范幼儿园" src="中国奖项/AAA级放心示范幼儿园1.png">
         </div>
 
-        <div class="col s12 m6 l3">
-          <div class="card hoverable">
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="slide0.png">
-              <span class="card-title activator">奖项二</span>
-            </div>
-            <div class="card-content">
-              <p>悦宝园运动</p>
-            </div>
-          </div>
+        <div class="col s4 m3">
+          <img class="responsive-img materialboxed" data-caption="早教行业诚信品牌奖" src="中国奖项/早教行业诚信品牌奖1.png">
         </div>
 
-        <div class="col s12 m6 l3">
-          <div class="card hoverable">
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="slide0.png">
-              <span class="card-title activator">奖项三</span>
-            </div>
-            <div class="card-content">
-              <p>悦宝园音乐</p>
-            </div>
-          </div>
+        <div class="col s4 m3">
+          <img class="responsive-img materialboxed" data-caption="最具影响力教育品牌" src="中国奖项/教育家.jpg">
         </div>
 
-        <div class="col s12 m6 l3">
-          <div class="card hoverable">
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="slide0.png">
-              <span class="card-title activator">奖项四</span>
-            </div>
-            <div class="card-content ">
-              <p>悦宝园音乐</p>
-            </div>
-          </div>
+        <div class="col s4 m3">
+          <img class="responsive-img materialboxed" data-caption="最具知名度儿童教育机构" src="中国奖项/新浪教育.jpg">
         </div>
+
+
+      </div>
+      <div class="row">
+        <div class="col s4 m3">
+          <img class="responsive-img materialboxed" data-caption="一二五教育科研规划" src="中国奖项/十二五.jpg">
+        </div>
+
+        <div class="col s4 m3">
+          <img class="responsive-img materialboxed" data-caption="2012中国儿童早期教育十佳品牌奖" src="中国奖项/2012中国儿童早期教育十佳品牌奖.jpg">
+        </div>
+
+        <div class="col s4 m3">
+          <img class="responsive-img materialboxed" data-caption="父母在线获奖" src="中国奖项/父母在线获奖.jpg">
+        </div>
+
+        <div class="col s4 m3">
+          <img class="responsive-img materialboxed" data-caption="十大早教品牌" src="中国奖项/十大早教品牌.jpg">
+        </div>
+
       </div>
     </div>
   </div>

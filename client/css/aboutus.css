@@ -1,5 +1,5 @@
 .parallax-container {
-    height:200px !important; 
+    height:200px; 
 }
 
 .section-title {
@@ -7,6 +7,7 @@
     margin-bottom: 1em;
     font-size: 22px;
     font-weight: 400;
+    
 }
 .section-title:before {
     content: "";
@@ -19,7 +20,16 @@
 .section-title span {
     position: relative;
     display: inline-block;
-    padding-right: 1.4em;
+    padding-right: 0.8em;
+}
+
+.section-title i {
+    padding: 6px;
+    border-radius: 50%;
+    color: #dddddd;
+    border: 4px solid #dddddd;
+    margin-right: 16px;
+    font-size: 22px;
 }
 
 i.YBcool {
@@ -30,14 +40,7 @@ i.YBcool {
     text-align: center;
 }
 
-.section-title i {
-    padding: 6px;
-    border-radius: 50%;
-    color: #dddddd;
-    border: 4px solid #dddddd;
-    margin-right: 16px;
-    font-size: 24px;
-}
+
 .fun-facts .card i {
     display: block;
     font-size: 65px;

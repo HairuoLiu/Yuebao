@@ -94,29 +94,29 @@
 
 /* YB背景色 */
 .YByellow{
-    background-color: #FFF7D2;
+    background-color: #FFF7D2 !important;
 }
 .YBpurple{
-    background-color: #95519e;
+    background-color: #95519e !important;
 }
 .YBgreen{
-    background-color: #9FCA64;
+    background-color: #9FCA64 !important;
 }
 .YBblue{
-    background-color: #b1c5e2;
+    background-color: #b1c5e2 !important;
 }
 /*Color*/
 .YByellowfont{
-    color: #FFF7D2;
+    color: #FFF7D2 !important;
 }
 .YBpurplefont{
-    color: #95519e;
+    color: #95519e !important;
 }
 .YBgreenfont{
-    color: #9FCA64;
+    color: #9FCA64 !important;
 }
 .YBbluefont{
-    color: #b1c5e2;
+    color: #b1c5e2 !important;
 }
 
 .YByellowdivider{
