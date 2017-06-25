@@ -1,6 +1,6 @@
 <template name="navbar">
 
-    <div id="blue" class="block bg1">
+    <!--<div id="blue" class="block bg1">
         <nav class="pushpin" data-target="blue">
             <div class="nav-wrapper YByellow ">
                 <div class="container">
@@ -36,7 +36,7 @@
                 </div>
             </div>
         </nav>
-    </div>
+    </div>-->
 
     {{#if currentUser}} 
     {{else}}
@@ -44,7 +44,10 @@
     <div class="navbar-fixed">   
         <nav class="navbar-fixed YByellow main-navigation " role="navigation">
             <div class="haf">
-            <div class="nav-wrapper container">  
+            <div class="nav-wrapper container">   
+                <a id="logo-container" href="/" class="brand-logo white-text">
+                        <img src="/YB幼儿园.png" class="logo" alt="">
+                    </a>
                 <ul class="right hide-on-med-and-down main-navigation">
                     <li><a class="black-text text-darken-2" href="tel://4000789080"><i class="fa fa-phone"></i> 报名热线: 400-078-9080</a></li>
                     <li><a class="black-text text-darken-2" href="login" id="login-link"><i class="fa fa-sign-in"></i> 登录</a></li>
@@ -63,9 +66,9 @@
             <div class="nav-wrapper YBpurple opacity">
                 
                 <div class="nav-wrapper container ">
-                    <a id="logo-container" href="/" class="brand-logo white-text">
+                    <!--<a id="logo-container" href="/" class="brand-logo white-text">
                         <img src="/YB幼儿园.png" class="logo" alt="">
-                    </a>
+                    </a>-->
                     <ul class="right hide-on-med-and-down main-navigation">
                         <li><a href="/">主页</a></li>
                         <li><a href="/aboutus">关于我们</a></li>

@@ -140,9 +140,11 @@ i.YBcool {
 }
 
 .Yuebao_tmtimeline>li .Yuebao_tmlabel p.light-text {
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 200;
-    line-height: 20px
+    line-height: 20px;
+    color: white
+
 }
 
 .Yuebao_tmtimeline>li .Yuebao_tmlabel:after {
