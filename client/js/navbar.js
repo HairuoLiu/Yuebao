@@ -1,20 +1,24 @@
 Template.navbar.rendered = function () {
-    $('.pushpin').each(function () {
-        var $this = $(this);
-        var $target = $('#' + $(this).attr('data-target'));
-        $this.pushpin({
-            top: $target.offset().top,
-            bottom: $target.offset().top + $target.outerHeight() - $this.height()
-        });
+    $( document ).ready(function(){
+        $(".button-collapse").sideNav();
     });
 
-    $(document).ready(function () {
-        $('.target').pushpin({
-            top: 500,
-            bottom: 1000,
-            offset: 0
-        });
-    });
+    // $('.pushpin').each(function () {
+    //     var $this = $(this);
+    //     var $target = $('#' + $(this).attr('data-target'));
+    //     $this.pushpin({
+    //         top: $target.offset().top,
+    //         bottom: $target.offset().top + $target.outerHeight() - $this.height()
+    //     });
+    // });
+
+    // $(document).ready(function () {
+    //     $('.target').pushpin({
+    //         top: 500,
+    //         bottom: 1000,
+    //         offset: 0
+    //     });
+    // });
 }
 
 Template.navbar.events({

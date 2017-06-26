@@ -1,5 +1,4 @@
 <template name="navbar">
-
     <!--<div id="blue" class="block bg1">
         <nav class="pushpin" data-target="blue">
             <div class="nav-wrapper YByellow ">
@@ -38,40 +37,34 @@
         </nav>
     </div>-->
 
-    {{#if currentUser}} 
-    {{else}}
+    {{#if currentUser}} {{else}}
     <!-- oldheader -->
-    <div class="navbar-fixed">   
-        <nav class="navbar-fixed YByellow main-navigation " role="navigation">
-            <div class="haf">
-            <div class="nav-wrapper container">   
-                <a id="logo-container" href="/" class="brand-logo white-text">
-                        <img src="/YB幼儿园.png" class="logo" alt="">
-                    </a>
-                <ul class="right hide-on-med-and-down main-navigation">
+    <div class="navbar-fixed">
+        <nav>
+            <div>
+                <a class="btn-floating btn-large halfway-fab waves-effect waves-light YBgreen pulse " href="tel://4000789080">
+                    <i class="material-icons">phone</i>悦宝园
+                </a>
+            </div>
+            <!--
+            <div class="container">   
+                <ul class="right">
                     <li><a class="black-text text-darken-2" href="tel://4000789080"><i class="fa fa-phone"></i> 报名热线: 400-078-9080</a></li>
                     <li><a class="black-text text-darken-2" href="login" id="login-link"><i class="fa fa-sign-in"></i> 登录</a></li>
                     <li><a class="black-text text-darken-2" href="http://www.rompy.cn/"><i class="fa fa-home"></i> 悦宝园官网</a></li>
                 </ul>
-                <ul id="nav-mobile" class="side-nav grey darken-4 white-text">
-                    <li><a class="black-text text-darken-2" href="tel://4000789080">报名热线: 400-078-9080</a></li>
-                    <li><a class="black-text text-darken-2" href="login">登陆</a></li>
-                    <li><a class="black-text text-darken-2" href="http://www.rompy.cn/">悦宝园官网</a></li>
-                </ul>
-                <a href="#" data-activates="nav-mobile" class="button-collapse text-darken-4 grey-text">
-                    <i class="material-icons white-text">menu</i>
-                </a>
-            </div>
-            </div>
+            </div>-->
             <div class="nav-wrapper YBpurple opacity">
-                
-                <div class="nav-wrapper container ">
-                    <!--<a id="logo-container" href="/" class="brand-logo white-text">
+                <div class="container">
+                    <a href="#!" class="brand-logo">
                         <img src="/YB幼儿园.png" class="logo" alt="">
-                    </a>-->
-                    <ul class="right hide-on-med-and-down main-navigation">
-                        <li><a href="/">主页</a></li>
-                        <li><a href="/aboutus">关于我们</a></li>
+                    </a>
+                     <a href="#" data-activates="nav-mobile" class="button-collapse">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul class="right hide-on-med-and-down ">
+                        <li><a class="active" href="/">主页</a></li>
+                        <li><a href="aboutus">关于我们</a></li>
                         <li><a href="class">课程介绍</a></li>
                         <li><a href="teacher">专业师资</a></li>
                         <li><a href="news">新闻中心</a></li>
@@ -79,8 +72,9 @@
                         <li><a href="contactus">联系我们</a></li>
                         <li><a href="appointment" class="btn orange accent-2">在线预约</a>
                         </li>
+
                     </ul>
-                    <ul id="nav-mobile" class="side-nav grey darken-4 white-text">
+                    <ul id="nav-mobile" class="side-nav">
                         <li><a href="/">主页</a></li>
                         <li><a href="appointment">点击预约</a></li>
                         <li><a href="aboutus">关于我们</a></li>
@@ -90,14 +84,9 @@
                         <li><a href="joinus">事业加盟</a></li>
                         <li><a href="contactus">联系我们</a></li>
                     </ul>
-                    <a href="#" data-activates="nav-mobile" class="button-collapse text-darken-4 grey-text">
-                        <i class="material-icons white-text">menu</i>
-                    </a>
                 </div>
             </div>
         </nav>
     </div>
     {{/if}}
-
-
 </template>

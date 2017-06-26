@@ -1,10 +1,13 @@
 .logo {
     max-width: 200px;
-    margin-right:100px;
 }
 
-.haf{
-    height: 100%;
+.type-logo{
+    top:10px;
+}
+
+.top{
+    top:0px !important;
 }
 
 html, body, .block {

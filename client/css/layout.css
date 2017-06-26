@@ -1,17 +1,29 @@
 /* The main content */
-.main-content{
-    /*old*/
-    padding-top: 60px;
-    min-height: 600px;
 
+.main-content {
+    /*old*/
+    /*padding-top:20px;*/
+    min-height: 600px;
+}
+
+.home {
+    z-index: 5;
+    height: 0px;
+}
+
+.down{
+    bottom: 30px;
+    POSITION: absolute;
 }
 
 /*maintitle*/
+
 .section-maintitle {
     position: relative;
     margin-bottom: 1em;
     font-size: 50px;
 }
+
 .section-maintitle:before {
     content: "";
     position: absolute;
@@ -20,6 +32,7 @@
     width: 100%;
     border-bottom: 4px solid;
 }
+
 .section-maintitle span {
     position: relative;
     display: inline-block;
@@ -34,48 +47,31 @@
     font-size: 36px;
 }
 
-
-
-
-.YBparallax-container {
-    position: relative;
-    overflow: hidden;
-    height: 560px;
-}
-
-/*.front{
-    position:absolute;
-    z-index: 1100;
-}
-
-.back{
-    position:relative;
-}*/
-
-.YBYY{
+.YBYY {
     border-radius: 10px;
 }
 
-.opacity{
+.opacity {
     opacity: 0.9;
 }
 
-.bg1{
-    background:url(/background.png);
-    
-}
-.bg2{
-    background-image:url(/background2);
-    width:100%;
-    position:relative;
-}
-.bg3{
-    background-image:url(/background1);
-    width:100%;
-    position:relative;
+.bg1 {
+    background: url(/background.png);
 }
 
-.YBcard{
+.bg2 {
+    background-image: url(/background2);
+    width: 100%;
+    position: relative;
+}
+
+.bg3 {
+    background-image: url(/background1);
+    width: 100%;
+    position: relative;
+}
+
+.YBcard {
     border-radius: 10px;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -83,7 +79,7 @@
     padding-right: 20px;
 }
 
-.YBsmallcard{
+.YBsmallcard {
     border-radius: 10px;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -93,44 +89,55 @@
 
 
 /* YB背景色 */
-.YByellow{
+
+.YByellow {
     background-color: #FFF7D2 !important;
 }
-.YBpurple{
+
+.YBpurple {
     background-color: #95519e !important;
 }
-.YBgreen{
+
+.YBgreen {
     background-color: #9FCA64 !important;
 }
-.YBblue{
+
+.YBblue {
     background-color: #b1c5e2 !important;
 }
+
+
 /*Color*/
-.YByellowfont{
+
+.YByellowfont {
     color: #FFF7D2 !important;
 }
-.YBpurplefont{
+
+.YBpurplefont {
     color: #95519e !important;
 }
-.YBgreenfont{
+
+.YBgreenfont {
     color: #9FCA64 !important;
 }
-.YBbluefont{
+
+.YBbluefont {
     color: #b1c5e2 !important;
 }
 
-.YByellowdivider{
+.YByellowdivider {
     height: 1px;
     overflow: hidden;
     background-color: #FFF7D2;
 }
-.YBpurpledivider{
+
+.YBpurpledivider {
     height: 1px;
     overflow: hidden;
     background-color: #95519e;
 }
 
-.YBgreendivider{
+.YBgreendivider {
     height: 1px;
     overflow: hidden;
     background-color: #9FCA64;
