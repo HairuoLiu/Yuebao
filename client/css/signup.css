@@ -3,16 +3,6 @@
 	max-width: 500px;
 }
 
-.login-background{
-	background:url(/login-background.jpg);
-	height:100%;
-	width:100%;
-	position:fixed;
-	top:125px;
-	left:0;
-	right:0;
-	bottom:-125px;
-}
 
 .form-logo {
 	width: 100%;

@@ -1,5 +1,9 @@
 .parallax-container {
-    height:200px !important; 
+    height:350px !important; 
+}
+
+.biggest{
+    font-size: 90px !important;
 }
 
 .section-title {
@@ -45,11 +49,10 @@ i.YBcool {
     display: block;
     font-size: 65px;
     margin-bottom: 20px;
-    
 }
 
 .reason{
-    min-height: 355px;
+    min-height: 250px;
 }
 
 .Yuebao_tmtimeline {
