@@ -1,14 +1,15 @@
 Template.appointment.rendered = function () {
     $(document).ready(function() {
-        $('input#phone,textarea#description').characterCounter();
-    });
-    $(document).ready(function () {
+        $(window).scrollTop(0);
         $('select').material_select();
+        $('input#phone,textarea#description').characterCounter();
     });
     $('.datepicker').pickadate({
         selectMonths: true, // Creates a dropdown to control month
         selectYears: 6 // Creates a dropdown of 15 years to control year
     });
+     Materialize.toast('欢迎预约', 3000, 'rounded ppB') // 'rounded' is the class I'm applying to the toast
+
 }
 
 Template.appointment.events({
@@ -49,5 +50,4 @@ var isNotEmpty = function(value){
 	}
     Bert.alert("请填写所有表单", "danger", "growl-top-right");
     return false;
-	
 };

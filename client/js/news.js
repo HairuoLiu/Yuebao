@@ -1,15 +1,16 @@
 Template.news.rendered = function (){
      $(document).ready(function () {
+         $(window).scrollTop(0);
         $('.carousel').carousel();
+        $('.parallax').parallax(); 
         $('.slider').slider();
         $('.slider').slider('start');
+        $('.collapsible').collapsible();   
     });
-    
     $('.carousel.carousel-slider').carousel({
         fullWidth: true
     });
 
-    $('.collapsible').collapsible();
     
     // Start slider 
 }

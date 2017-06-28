@@ -22,7 +22,6 @@ Template.navbar.rendered = function () {
 }
 
 Template.navbar.events({
-    
     "click .logout": function (event) {
         Meteor.logout(function (err) {
             if (err) {
