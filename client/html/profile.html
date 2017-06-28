@@ -13,7 +13,7 @@
 				<button type="submit" value="Upload Photo" id="profile-btn" class="btn btn-sml btn-primary">Upload Photo</button>
 			</form>
 			{{else}}
-			<img src="github.svg" class="profile-img">
+			<img src="github.jpg" class="profile-img">
 			<form class="edit-profile" enctype="multipart/form-data">
 				<label for="profileImage">Choose Profile Image</label>
 				<span id="filename"></span>
@@ -24,47 +24,25 @@
 			{{/with}}
 			<h1 class="username">{{username}}</h1>
 			<h3>{{email}}</h3>
-				<div class="" id="">
-					<img src="laugh.png" class="profile-smiley" id="laugh">
-					<img src="frown.png" class="profile-smiley" id="frown">
-					<img src="puke.png" class="profile-smiley" id="puke">
-				</div>
-				<div class="score" id="">
-					<h3 class="count red block">{{userLaughScore}}</h3>
-					<h3 class="count yellow block">{{userFrownScore}}</h3>
-					<h3 class="count green block">{{userPukeScore}}</h3>
-				</div>
 		</center>
 	</div>
 	<!-- End profile -->
-	{{#each userJokes}}
-	<!-- Joke -->
-	<div class="joke">
+	{{#each userNews}}
+	<!-- News -->
+	<div class="news">
 		<div class="row">
 			<div class=".col-sm-6 .col-md-5 .col-lg-6" id="info">
-				<h1 class="news-title">{{jokeName}}</h1>
-				<p class="meta">Author: {{author}}</p>
-				<p class="meta">Posten On: {{date}}</p>
-			</div>
-			<div class=".col-sm-6 .col-md-5 .col-md-offset-2 .col-lg-6 .col-lg-offset-0" id="vote">
-				<img src="laugh.png" class="smiley" id="laugh">
-				<img src="frown.png" class="smiley" id="frown">
-				<img src="puke.png" class="smiley" id="puke">
-			</div>
-			<div class="row" id="score">
-				<h3 class="count red block">{{laughScore}}</h3>
-				<h3 class="count yellow block">{{frownScore}}</h3>
-				<h3 class="count green block">{{pukeScore}}</h3>
+				<h1 class="news-title"></h1>
+				<p class="meta">作者: </p>
+				<p class="meta">发布日期: {{date}}</p>
 			</div>
 		</div>
-
-		<p class="regular joke-desc">"{{newsPost}}"</p>
-		<button class="btn btn-sml btn-danger" id="delete-joke">News</button>
-
+		<p class="regular">"{{newsPost}}"</p>
+		<button class="btn btn-sml btn-danger" id="delete-news">News</button>
 	</div>
 	<!-- End Joke -->
 	{{else}}
-	<h1>no jokes to display</h1>
+	<h1>no News to display</h1>
 	{{/each}}
 
 <!-- Js for switching file picker span -->

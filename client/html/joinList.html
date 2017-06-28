@@ -1,0 +1,38 @@
+<template name="joinList">
+    {{#if currentUser}}
+    <div class="section YByellow">
+        <table class="highlight">
+            <thead>
+                <tr>
+                    <th>姓名</th>
+                    <th>手机号码</th>
+                    <th>邮箱地址</th>
+                    <th>详细描述</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                {{#each joinList}}
+                <!--显示每条数据中的name和age-->
+                <tr>
+                    <td>{{joinname}}</td>
+                    <td>{{phone}}</td>
+                    <td>{{email}}</td>
+                    <td>{{description}}</td>
+                    <td><button class="btn red lighten-1 waves-effect waves-light " id="reomoveA">删除</button></td>
+                </tr>
+                {{else}}
+                <tr>
+                    <td>没有预约</td>
+                    <td>添加预约</td>                
+                </tr>
+                {{/each}}
+            </tbody>
+
+        </table>
+    </div>
+    {{else}}
+        <h2 class="YByellow center">请登陆查看预约</h2>
+    {{/if}}
+</template>

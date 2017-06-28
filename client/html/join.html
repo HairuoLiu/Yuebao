@@ -1,0 +1,32 @@
+  <template name="join">
+
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="input-field col s2">
+                    <input id="joinname" type="text" class="validate" />
+                    <label for="joinname">姓名</label>
+                </div>
+                <div class="input-field col s5">
+                    <input id="joinphone" type="text" class="validate" data-length="11"/>
+                    <label for="joinphone">手机号码</label>
+                </div>
+                <div class="input-field col s5">
+                    <input id="joinemail" type="text" class="validate" />
+                    <label for="joinemail">邮件地址</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-field col s12">
+                    <textarea id="joindescription" class="materialize-textarea" type="text" data-length="140"></textarea>
+                    <label for="joindescription">详细描述</label>
+                </div>
+
+            </div>
+            <div class="row center">
+                <button class="btn light-green waves-effect waves-light " type="submit"> 提交 </button>
+            </div>
+        </div>
+    </div>
+</template>
